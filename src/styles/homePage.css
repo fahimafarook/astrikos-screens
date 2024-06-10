@@ -3,5 +3,376 @@
     height: 100vh;
     width: 100vw;
     display: flex;
-    
+    flex-direction: row;
+}
+
+.panelContainer{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap:20px;
+    margin-top: 20px;
+}
+
+.leftPanel{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 25px 30px;
+    gap: 8.42px;
+    width: 337px;
+    height: 248px;
+    filter: drop-shadow(0px 0px 12.2909px #3881D5);
+    backdrop-filter: blur(5.8446px);
+    border-radius: 15px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    flex-grow: 0;
+    gap:30px;
+    position: relative;
+}
+
+.askAelia{
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px 21.1677px;
+    width: 333px;
+    height: 202.16px;
+    background: linear-gradient(107.08deg, rgba(29, 163, 239, 0.160784) 1.56%, rgba(91, 97, 215, 0.160784) 98.86%);
+    box-shadow: 0px 0px 30px #F8D831;
+    border-radius: 12.7006px;
+    flex: none;
+    order: 1;
+}
+
+.aelia-chat{
+  /* Frame 2124 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 6px 12px;
+gap: 5px;
+
+width: fit-content;
+height: 20px;
+
+/* Astrikos Gradient (Light) */
+background: linear-gradient(81.58deg, #D6E7A5 0%, #A6CBF5 100%);
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+font-size: 12px;
+font-family: 'roboto-regular';
+color: #72777A;
+border-radius: 16px;
+}
+
+.ask-anything-button{
+    /* Input */
+ 
+margin-top: 5px;
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 8.89908px 17.7982px;
+gap: 14.24px;
+isolation: isolate;
+
+width: 217px;
+height: fit-content;
+
+background: #FDFEFE;
+border: 1.33486px solid #979C9E;
+border-radius: 42.7156px;
+flex: none;
+order: 0;
+flex-grow: 1;
+color: #72777A;
+font-size: 12px;
+}
+
+.leftPanelCardHeader{
+    font-family: 'roboto-black';
+    color: white;
+    font-size: 20px;
+    align-items: flex-start;
+}
+
+.dataCenterOverview{
+   /* Data Center Blueprint */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 10px 25px 30px;
+gap: 8.42px;
+
+width: 337px;
+height: 248px;
+
+filter: drop-shadow(0px 0px 12.2909px #3881D5);
+backdrop-filter: blur(5.8446px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 15px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+border: solid 0.5px white;
+}
+
+
+.dataCenterText{
+    font-family: 'roboto-black';
+    color: white;
+}
+
+.centerpanel{
+    box-sizing: border-box;
+    width: 1100px;
+    height: 805px;
+    left: 509px;
+    top: 253px;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 12.2909px #3881D5;
+    backdrop-filter: blur(7.075px);
+    border-radius: 30.5626px;
+    border: solid 1px white;
+}
+
+.securityUptime{
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    position: relative;
+    width: 160px;
+    height: 163.03px;
+    font-family: 'roboto-regular';
+    color: white;
+}
+
+.UptimeTitle{
+    width: fit-content;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'roboto-black';
+}
+
+.uptime{
+    font-size: 33px;
+    font-weight: 500;
+    font-family: 'roboto-medium';
+}
+
+.MTFB{
+    display: flex;
+    gap:5px;
+    justify-content: start;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.MTTR{
+    display: flex;
+    gap:5px;
+    justify-content: start;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.recomendations{
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.MTFB > .value{
+    color: #EED52F;
+}
+
+
+.MTTR > .value{
+    color: #EED52F;
+}
+
+.MTFB{
+    display: flex;
+    gap:5px;
+    justify-content: start;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.MTTR{
+    display: flex;
+    gap:5px;
+    justify-content: start;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.recomendations{
+    font-size: 14px;
+}
+
+.MTFB > .value{
+    color: #EED52F;
+}
+
+
+.MTTR > .value{
+    color: #EED52F;
+}
+
+
+
+
+
+
+.OA-MTFB{
+    display: flex;
+    gap:5px;
+    justify-content: start;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 16.67px;
+}
+
+.OA-MTTR{
+    display: flex;
+    gap:5px;
+    justify-content: start;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16.67px;
+}
+
+.OA-recomendations{
+    font-size: 11.37px;
+}
+
+.MTFB > .value{
+    color: #EED52F;
+}
+
+
+.MTTR > .value{
+    color: #EED52F;
+}
+
+.OA-uptime{
+    font-size: 50px;
+}
+
+
+.rightPanel{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8.03018px 20.0754px 24.0905px;
+    gap: 6.76px;
+    width: 271px;
+    height: 206px;
+    left: 1634px;
+    top: 273px;
+    filter: drop-shadow(0px 0px 9.86984px #3881D5);
+    backdrop-filter: blur(4.69332px);
+    border-radius: 12.0453px;
+}
+
+.advisories{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: left;
+    padding: 8.03018px 20.0754px 24.0905px;
+    gap: 6.76px;
+    width: 271px;
+    height: 206px;
+    left: 1634px;
+    top: 273px;
+    backdrop-filter: blur(4.69332px);
+    border-radius: 12.0453px;
+    border: solid 1px rgb(225, 225, 225);
+    font-family: 'roboto-medium';
+}
+
+.advisoriesTitle{
+    font-size: 29px;
+    font-family: 'roboto-Black';
+    backdrop-filter: none;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 7px;
+    align-items: baseline;
+    color: white;
+}
+
+.advisoriesLink{
+    color: white;
+}
+
+.realTime{
+    box-sizing: border-box;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: linear-gradient(250.74deg, rgba(178, 178, 178, 0.0192) 3.45%, rgba(255, 255, 255, 0.024) 51.14%, rgba(153, 153, 153, 0.0276) 98.67%);
+    backdrop-filter: blur(12.474px);
+    border-radius: 19.6958px;
+    background: #ada785;
+    border-radius: solid 1px red;
+}
+
+.dataCenterPerformance{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 25px 30px;
+    gap: 8.42px;
+    width: 337px;
+    height: 285px;
+    filter: drop-shadow(0px 0px 12.2909px #3881D5);
+    backdrop-filter: blur(5.8446px);
+    border-radius: 15px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    border: solid 0.5px white;
 }

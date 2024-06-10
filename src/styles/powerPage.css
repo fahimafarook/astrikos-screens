@@ -1,0 +1,76 @@
+.powerRepresentations{
+    background-color: rgb(20,70,128);
+    height: 100vh;
+    width: 100vw;
+}
+
+.powerVisual{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.svgHighlighter{
+    /* KPI Card */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 5.65503px;
+gap: 4.76px;
+
+width: 131.15px;
+height: 132.45px;
+
+/* Astrikos Menu Gradient */
+background: linear-gradient(107.08deg, rgba(29, 163, 239, 0.160784) 1.56%, rgba(91, 97, 215, 0.160784) 98.86%);
+box-shadow: 0px 0px 12.2909px #54FF97;
+backdrop-filter: blur(3.30514px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 12.5299px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+.powerRepresentations{
+    width: 1072.73px;
+    height: 756.6px;
+}
+
+.powerCardBody{
+/* Main KPI Card */
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 7.72647px 7.72647px 7.72647px 11.5897px;
+
+    width: 917px;
+    height: 132.82px;
+
+    /* Astrikos Menu Gradient */
+    background: linear-gradient(107.08deg, rgba(29, 163, 239, 0.160784) 1.56%, rgba(91, 97, 215, 0.160784) 98.86%);
+    box-shadow: 0px 0px 12.2909px #54FF97;
+    backdrop-filter: blur(5.76188px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 12.3319px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    border: solid 1px white;
+
+
+}
