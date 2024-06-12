@@ -1,7 +1,13 @@
+.powerPage{
+    display: flex;
+    flex-direction: row;
+}
+
 .powerRepresentations{
     background-color: rgb(20,70,128);
-    height: 100vh;
-    width: 100vw;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-top: 30px;
 }
 
 .powerVisual{
@@ -13,36 +19,40 @@
 .svgHighlighter{
     /* KPI Card */
 
-box-sizing: border-box;
+    box-sizing: border-box;
 
-/* Auto layout */
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-padding: 5.65503px;
-gap: 4.76px;
+    /* Auto layout */
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5.65503px;
+    gap: 4.76px;
 
-width: 131.15px;
-height: 132.45px;
+    width: 131.15px;
+    height: 132.45px;
 
-/* Astrikos Menu Gradient */
-background: linear-gradient(107.08deg, rgba(29, 163, 239, 0.160784) 1.56%, rgba(91, 97, 215, 0.160784) 98.86%);
-box-shadow: 0px 0px 12.2909px #54FF97;
-backdrop-filter: blur(3.30514px);
-/* Note: backdrop-filter has minimal browser support */
-border-radius: 12.5299px;
+    /* Astrikos Menu Gradient */
+    background: linear-gradient(107.08deg, rgba(29, 163, 239, 0.160784) 1.56%, rgba(91, 97, 215, 0.160784) 98.86%);
+    box-shadow: 0px 0px 12.2909px #54FF97;
+    backdrop-filter: blur(3.30514px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 12.5299px;
 
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
 
+.svgHighlighter:hover{
+    box-shadow: 0px 0px 12.29px 0px #FF3333;
 }
 
 .powerRepresentations{
     width: 1072.73px;
-    height: 756.6px;
+    position: relative;
 }
 
 .powerCardBody{
@@ -52,7 +62,7 @@ flex-grow: 0;
 
     /* Auto layout */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     padding: 7.72647px 7.72647px 7.72647px 11.5897px;
 
@@ -71,6 +81,152 @@ flex-grow: 0;
     order: 1;
     flex-grow: 0;
     border: solid 1px white;
+    gap: 10px;
+}
 
+.powerCardBody:hover{
+    box-shadow: 0px 0px 12.29px 0px #FF3333;
+}
+
+
+.power-card-metric{
+    display: flex;
+    flex-direction: column;
+    font-family: 'roboto-regular';
+}
+
+.power-card-metric > .title{
+    font-size: 18px;
+    font-family: 'roboto-black';
+    color: white;
+}
+
+.power-card-metric > .status{
+    font-size: 12px;
+    font-family: 'roboto-regular';
+    color: white;
+}
+
+.power-card-metric > .battery-representation{
+  background-color: #54FF97;
+  border-radius: 15px;
+  font-family: 'roboto-black';
+  height: 42.59px;
+  width: 137.99px;
+  font-size: 27px;
+  text-align: center;
+  font-family: 'roboto-medium';
+  border: solid 0.5px white;
+}
+
+.battery-representation::after{
 
 }
+
+.power-card-recomendation{
+    font-family: 'roboto-medium';
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 20px;
+
+}
+
+.power-card-recomendation >.title{
+    font-size: 18px;
+    font-family: 'roboto-black';
+}
+
+.power-card-metric > .alerts{
+    color: white;
+    font-family: 'roboto-medium';
+}
+
+.power-card-metric > .recomendations{
+    color: white;
+    font-family: 'roboto-medium';
+    background-color: blueviolet;
+}
+
+.powerRightPanel{
+    /* Frame 2326 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 20px;
+gap: 22px;
+width: 675px;
+height: 791px;
+left: 1240px;
+top: 268px;
+border-radius: 20px;
+border: solid 1px rgb(110, 110, 110);
+margin: 30px;
+margin-left: 15px;
+}
+
+.accordian{
+    /* Accordian */
+
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 5.36347px;
+gap: 5.36px;
+
+width: 635px;
+height: 29px;
+
+/* Menu Linear Gradient */
+background: linear-gradient(90deg, rgba(49, 40, 74, 0.48) 0%, rgba(137, 124, 189, 0.216) 48.5%, rgba(58, 48, 86, 0.48) 100%);
+border-radius: 3.36437px 3.36437px 0px 0px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+color: white;
+align-items: center;
+}
+
+.orangeDot{
+        /* Ellipse 13 */
+
+    width: 10px;
+    height: 10px;
+
+    /* Foundation /Secondary-3/secondary-3-500 */
+    background: #E6944F;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border-radius: 50%;
+
+}
+
+.power-real-time{
+    display: flex;
+    padding: 10px 0px;
+    gap: 19.71px;
+    width: 306px;
+    height: 691px;
+    left: 0px;
+    top: 4px;
+    border: solid 1px white;
+    position: relative;
+    box-shadow: 0px 0px 12.29px 0px #04DB9B;
+    border-radius: 20px;
+}
+
+
+

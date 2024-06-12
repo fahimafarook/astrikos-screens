@@ -3,6 +3,7 @@ import animationData from '../assets/Lottie/Animation - 1717998174628.json';
 import Lottie from 'react-lottie';
 import securitySvg from '../assets/svg/uptimeSVG/Security.svg'
 import IconSparkle from '../assets//svg/IconSparkle.svg'
+import GlowEffect from '../assets/svg/HomePageGlow.svg'
 import ReactECharts from 'echarts-for-react';
 import '../styles/homePage.css'
 
@@ -124,9 +125,10 @@ function OverallOverview(props) {
                 </div>
                 <div className='recomendations'>
                     <img src={IconSparkle}></img>
-                    <span>{props.recomendations}Recommendations</span>
+                    <span>{props.recomendations} Recommendations</span>
                     <Lottie options={defaultOptions} height={40} width={30} style={{transform:"translateY(20px)"}}/>
                     <img src={props.uptimeSVG}></img>
+                    <img src={GlowEffect} style={{transform:"translate(-30px, -300px)",}}/>
                 </div>
             </div>
         </div>

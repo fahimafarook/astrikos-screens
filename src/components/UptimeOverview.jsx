@@ -3,6 +3,7 @@ import animationData from '../assets/Lottie/Animation - 1717998174628.json';
 import Lottie from 'react-lottie';
 import securitySvg from '../assets/svg/uptimeSVG/Security.svg'
 import IconSparkle from '../assets//svg/IconSparkle.svg'
+import GlowEffect from '../assets/svg/HomePageGlow.svg'
 
 function UptimeOverview(props) {
 
@@ -16,7 +17,7 @@ function UptimeOverview(props) {
     };
 
     return (
-        <div>
+        <div onClick={() => props.onClick()}>
             <div className='securityUptime' style={props.style}>
                 <div style={{display:"flex", flexDirection:"row", justifyContent:"center", gap:"5px"}}>
                     <img src={props.uptimeIcon}></img>
@@ -44,6 +45,7 @@ function UptimeOverview(props) {
                 <div style={{padding:"0", transform:"translateY(-10px)"}}>
                     <Lottie options={defaultOptions} height={50} width={30} style={{transform:"translateY(20px)"}}/>
                     <img src={props.uptimeSVG}></img>
+                    <img className="glow-ray" src={GlowEffect} style={{transform:"translate(-30px, -200px) scale(0.8)",}}/>
                 </div>
             </div>
         </div>
