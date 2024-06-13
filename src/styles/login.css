@@ -1,0 +1,192 @@
+.login-card-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px;
+    gap: 13px;
+    width: 700px;
+    height: 712px;
+    background: linear-gradient(81.58deg, rgba(61, 17, 118, 0.5) 0%, rgba(10, 4, 26, 0.215) 100%);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    font-family: 'roboto-medium';
+    border: solid 0.5px white;
+}
+
+
+.login-page{
+    background-image: url("https://s3-alpha-sig.figma.com/img/4b6e/b4a7/e6b36ff26569c8b1e3dc80ff246b5211?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mQ4Fy5WW5OwE9qyfjmq-BseujSLvz1r82ygPYYrNjjpFDCTxgg0bQiTE2jvklAo8rpBuUGrS-P0Jj3s0rtaHdc4y1DGUbc7ydpu5yhoYrPb4dSqz5TCHce~~9foteBtZror~h5PIcQEpkbIXbOxSUS5dtimSjlyyaV9cNrWxJuS~o-IMbnuEj74xmEVtC9YrKYUyzr5xHzlFWxHx1FGA0mtsvqyf2RLLtZz6dKeiw0kdDCY-Nr-0R00R5jFZRjxSW2o~fxineq1xZlYYrR1O~zVATqWd0dXmSAijnUKLQhaCKyopB25U2-PwlldHWs8GAqWxaIpcohwoi1tR3ahBlQ__");
+    background-repeat: none;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://s3-alpha-sig.figma.com/img/ea80/fd4a/182772bd1172ad0a706784f31dafc655?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DoQpFdc9-KPeEJIvFBFNkskBg2Qm6zkt~eaH8-IBvdgYfbDnes0tpXUENfBb4XrocOnLSWL-wDG1CpWAgMi4NZst~Ad0LTorurhLHfNF1MTykhv6Qavqn78RS2Do173owCiQ9cg0jshtRBwRQCk6YdAJkB86vVXi2PVwEYiOn8jOmRzxky1RnDBn3nt7eiiJOkfJvkMHmW8bO-HFj6cNvnayTlmz-epCBcj2sosypTebPvSHC7bQPLUI-X~SZ55tmf9iUt0xwZG5zbm5ELRKsJt0KpvsKlldrhrP51rBRy-IiHW-3AyWr4ChqvAO5GTI3OM6Qjq9auTXSZp~d7HmXQ__');
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form input{
+box-sizing: border-box;
+width: 500px;
+height: 50px;
+left: calc(50% - 500px/2);
+top: calc(50% - 50px/2);
+background: #FFFFFF;
+border: 1px solid #BCBEC0;
+border-radius: 10px;
+margin-bottom: 15px;
+margin-top: 15px;
+}
+
+.login-form label{
+width: 62px;
+height: 21px;
+
+font-family: 'roboto-regular';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+}
+
+.login-label{
+    font-size: 34px;
+    color: white;
+    font-family: 'roboto-black';
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.input-placeholder::placeholder {
+    color : #BCBEC0;
+    font-size: 14px;
+    font-family: 'roboto-regular';
+    padding-left: 20px;
+}
+
+.forgot-password{
+    font-family: 'roboto-regular';
+    font-size: 12px;
+    color: white;
+    font-family: 'roboto-regular';
+}
+
+.facing-issue{
+    font-family: 'roboto-regular';
+    font-size: 14px;
+    color: white;
+    font-family: 'roboto-regular';
+}
+
+.facing-issue::after{
+    content: "Contact Support";
+    position: absolute;
+    text-decoration: underline;
+    color: white;
+    margin-left: 5px;
+}
+
+.submit-button{
+    /* Button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 16px;
+gap: 6px;
+
+width: 499px;
+height: 40px;
+
+/* Foundation /Primary/primary-600 */
+background: #3881D5;
+border-radius: 6px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+border: none;
+font-family: 'roboto-regular';
+font-size: 14px;
+color: white;
+font-family: 'roboto-regular';
+margin-top: 10px;
+}
+
+.toggle-switch {
+    position: relative;
+    width: 26px;
+    height: 16px;
+  }
+  
+  .toggle-switch input {
+    display: none;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #3E8EEA;
+    transition: 0.4s;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.5); /* Blue color blur */
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 1px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+    top:0.5px;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(30px);
+  }
+
+  .single-sign-on{
+    margin-left: 10px;
+    font-family: 'roboto-regular';
+    font-size: 12px;
+    color: white;
+  }
+
+  
