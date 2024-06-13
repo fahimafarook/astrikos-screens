@@ -206,6 +206,7 @@ function HomePage(props) {
                     </div>
                 </div>
                 <div className='centerpanel'>
+                   
                     <div style={{display:"flex", flexDirection:"column", position:"relative", gap:"200px"}}>
                         <div  style={{display:"flex", flexDirection:"row", position:"relative", gap: "40px", justifyContent:"center"}}>
                             <UptimeOverview style={{transform:"translateY(200px)"}}

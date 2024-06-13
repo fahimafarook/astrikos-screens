@@ -160,6 +160,7 @@ function PowerRepresentation(props) {
                 <div className='powerVisual upsStatus'>
                     <div className='svgHighlighter'>
                         <img src={props.icon}></img>
+                        <span className='title'>UPS</span>
                     </div>
                     <div className='powerCardBody'>
                         <div className='power-card-metric'>

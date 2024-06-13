@@ -9,6 +9,13 @@ export const barGraph = {
       right: 4,
       data: ['Jan', 'Feb', 'Mar', 'Apr'],
     },
+    grid: {
+      left: '3%',
+      right: '10%',
+      bottom: '10%', 
+      top: '5%',
+      containLabel: true
+    },
     animationDurationUpdate: 500,
     series: [
       {
@@ -18,25 +25,25 @@ export const barGraph = {
           {
             value: 5,
             itemStyle: {
-              color: '#00FF64', // Green
+              color: '#1689CA', // Green
             },
           },
           {
             value: 2,
             itemStyle: {
-              color: '#FF0000', // Red
+              color: '#1F909C', // Red
             },
           },
           {
             value: 4,
             itemStyle: {
-              color: '#3E8EEA', // Blue
+              color: '#619373', // Blue
             },
           },
           {
             value: 4,
             itemStyle: {
-              color: '#A6CA3B', // Green
+              color: '#7E709E', // Green
             },
           },
         ],

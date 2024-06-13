@@ -127,7 +127,7 @@ function BatteryHealthPrediction() {
             <ChartContainerCard 
               icon={SocIcon}
               title="State of Charge (SoC)"
-              chartOptions={option3}
+              chartOptions={barGraph}
             />
             <ChartContainerCard 
               icon={SohIcon}
