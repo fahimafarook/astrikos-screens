@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState} from 'react'
 import '../../styles/BatteryHealthPrediction.css'
 import '../../styles/common.css'
 import RealTimeDataCard from "../RealTimeDataCard"
@@ -20,6 +21,13 @@ import {lineFillGraph} from "../../data/lineFillGraph.js"
 import {barGraph} from "../../data/barGraph.js"
 
 function UPSSystem() {
+
+  const [chartPage, setChartPage] = useState(1);
+
+  const handlePagination = (currentPage) => {
+    setChartPage(currentPage);
+  }
+
   return (
     <div style={{display:"flex"}}>
       <div className='bh-left-panel'>
@@ -39,44 +47,86 @@ function UPSSystem() {
             </button>
           </div>
           <div className='psh-pagination-container'>
-            <PaginationControl size="large"/>
+            <PaginationControl size="large" startCount="1" perPage="6" totalCount="12" onPageChange={handlePagination}/>
           </div>
         </div>
         <div className='ups-grid-container'>
-          <div className='ups-grid-charts'>
-            <ChartContainerCard 
-              icon={PredictiveMaintenance}
-              title="Predictive Maintenance"
-              chartOptions={lineFillGraph}
-            />
-            <ChartContainerCard 
-              icon={FuelEfficiency}
-              title="Fuel Efficiency Optimization"
-              chartOptions={barGraph}
-            />
-            <ChartContainerCard 
-              icon={LoadForecasting}
-              title="Load Forecasting and Management"
-              chartOptions={lineGraph}
-            />
-          </div>
-          <div className='ups-grid-charts'>
-            <ChartContainerCard 
-              icon={BatteryHealth}
-              title="Battery Health Prediction"
-              chartOptions={{}}
-            />
-            <ChartContainerCard 
-              icon={EmissionControl}
-              title="Emission Control and Compliance"
-              chartOptions={lineFillGraph}
-            />
-            <ChartContainerCard 
-              icon={FailureMode}
-              title="Failure Mode and Effects Analysis (FMEA)"
-              chartOptions={lineFillGraph}
-            />
-          </div>
+          {
+            chartPage == 1 && <>
+            <div className='ups-grid-charts'>
+              <ChartContainerCard 
+                icon={PredictiveMaintenance}
+                title="Predictive Maintenance"
+                chartOptions={lineFillGraph}
+              />
+              <ChartContainerCard 
+                icon={FuelEfficiency}
+                title="Fuel Efficiency Optimization"
+                chartOptions={barGraph}
+              />
+              <ChartContainerCard 
+                icon={LoadForecasting}
+                title="Load Forecasting and Management"
+                chartOptions={lineGraph}
+              />
+            </div>
+            <div className='ups-grid-charts'>
+              <ChartContainerCard 
+                icon={BatteryHealth}
+                title="Battery Health Prediction"
+                chartOptions={{}}
+              />
+              <ChartContainerCard 
+                icon={EmissionControl}
+                title="Emission Control and Compliance"
+                chartOptions={lineFillGraph}
+              />
+              <ChartContainerCard 
+                icon={FailureMode}
+                title="Failure Mode and Effects Analysis (FMEA)"
+                chartOptions={lineFillGraph}
+              />
+            </div>
+            </>
+          }
+          {
+            chartPage == 2 && <>
+            <div className='ups-grid-charts'>
+              <ChartContainerCard 
+                icon={BatteryHealth}
+                title="Battery Health Prediction"
+                chartOptions={{}}
+              />
+              <ChartContainerCard 
+                icon={EmissionControl}
+                title="Emission Control and Compliance"
+                chartOptions={lineFillGraph}
+              />
+              <ChartContainerCard 
+                icon={FailureMode}
+                title="Failure Mode and Effects Analysis (FMEA)"
+                chartOptions={lineFillGraph}
+              />
+            </div>
+            <div className='ups-grid-charts'>
+              <ChartContainerCard 
+                icon={PredictiveMaintenance}
+                title="Predictive Maintenance"
+                chartOptions={lineFillGraph}
+              />
+              <ChartContainerCard 
+                icon={FuelEfficiency}
+                title="Fuel Efficiency Optimization"
+                chartOptions={barGraph}
+              />
+              <ChartContainerCard 
+                icon={LoadForecasting}
+                title="Load Forecasting and Management"
+                chartOptions={lineGraph}
+              />
+            </div>
+            </>
+          }
         </div>
       </div>
       <div className='bh-right-panel'>
