@@ -166,10 +166,11 @@ flex-grow: 0;
 }
 
 .powerRepresentations{
-    background-color: rgb(20,70,128);
+    background-color: none;
     margin-bottom: 30px;
     margin-left: 10px;
     margin-top: 30px;
+ 
 }
 
 .powerVisual{
