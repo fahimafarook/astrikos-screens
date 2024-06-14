@@ -14,7 +14,7 @@ function RealTimeDataCard(props) {
           <div className='rt-card-header-title'>Real Time</div>
         </div>
         <div className='rt-card-pagination-container'>
-          <PaginationControl size="small" />
+          <PaginationControl size="small" startCount="1" perPage="3" totalCount="10"/>
         </div>
         <div className='rt-card-body'>
           <div className='rt-detail-card'>
