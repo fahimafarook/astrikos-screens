@@ -34,42 +34,46 @@
 .login-form{
     display: flex;
     flex-direction: column;
+    font-family: 'roboto-regular';
 }
 
 .login-form input{
-box-sizing: border-box;
-width: 500px;
-height: 50px;
-left: calc(50% - 500px/2);
-top: calc(50% - 50px/2);
-background: #FFFFFF;
-border: 1px solid #BCBEC0;
-border-radius: 10px;
-margin-bottom: 15px;
-margin-top: 15px;
+    box-sizing: border-box;
+    width: 500px;
+    height: 50px;
+    left: calc(50% - 500px/2);
+    top: calc(50% - 50px/2);
+    background: #FFFFFF;
+    border: 1px solid #BCBEC0;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-left: 30px;
+    font-size: 14px;
+    font-family: 'roboto-regular';
 }
 
 .login-form label{
-width: 62px;
-height: 21px;
+    width: 62px;
+    height: 21px;
 
-font-family: 'roboto-regular';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 21px;
+    font-family: 'roboto-regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
 
-display: flex;
-align-items: center;
+    display: flex;
+    align-items: center;
 
-color: #FFFFFF;
+    color: #FFFFFF;
 
 
-/* Inside auto layout */
-flex: none;
-order: 3;
-flex-grow: 0;
-
+    /* Inside auto layout */
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    
 }
 
 .login-label{
@@ -84,7 +88,6 @@ flex-grow: 0;
     color : #BCBEC0;
     font-size: 14px;
     font-family: 'roboto-regular';
-    padding-left: 20px;
 }
 
 .forgot-password{
@@ -94,6 +97,7 @@ flex-grow: 0;
     font-family: 'roboto-regular';
 }
 
+
 .facing-issue{
     font-family: 'roboto-regular';
     font-size: 14px;
@@ -101,9 +105,9 @@ flex-grow: 0;
     font-family: 'roboto-regular';
 }
 
-.facing-issue::after{
+.contact-support{
+    font-family: 'roboto-black';
     content: "Contact Support";
-    position: absolute;
     text-decoration: underline;
     color: white;
     margin-left: 5px;
@@ -179,7 +183,7 @@ margin-top: 10px;
   }
   
   input:checked + .slider:before {
-    transform: translateX(30px);
+    transform: translateX(10px);
   }
 
   .single-sign-on{
