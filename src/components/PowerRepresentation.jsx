@@ -156,13 +156,13 @@ function PowerRepresentation(props) {
     //     </div>
 
     return (
-        <div className='powerRepresentations'>
-                <div className='powerVisual upsStatus'>
-                    <div className='svgHighlighter'>
+        <div className="powerRepresentations">
+                <div className={`powerVisual upsStatus`}>
+                    <div className={`svgHighlighter ${props.className}`}>
                         <img src={props.icon}></img>
                         <span className='title'>UPS</span>
                     </div>
-                    <div className='powerCardBody'>
+                    <div className={`powerCardBody ${props.className}`}>
                         <div className='power-card-metric'>
                             <span className='title'>Availability</span>
                             <span className='status'>Optimal</span>

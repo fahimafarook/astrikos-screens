@@ -97,6 +97,10 @@
   transform: translateX(-50%);
 }
 
+.header-title-dark {
+  background-image: url("../assets/svg/HeaderTitleBackgroundDark.svg");
+}
+
 .title-container {
   min-width: 429px;
   width: fit-content;

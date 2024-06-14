@@ -215,10 +215,6 @@ flex-grow: 0;
     margin-top: 3px;
 }
 
-.svgHighlighter:hover{
-    box-shadow: 0px 0px 12.29px 0px #FF3333;
-}
-
 .powerRepresentations{
     width: 1072.73px;
     position: relative;
@@ -483,5 +479,26 @@ align-items: center;
     color: white;
     margin-left: 5px;
     font-family: 'roboto-medium';
+}
+
+.UPS-boxShadow{
+    box-shadow: 0px 0px 12.29px 0px #54FF97;
+    border: solid 0.3px rgb(183, 181, 181);
+}
+
+.PDU-boxShadow{
+    box-shadow: 0px 0px 12.29px 0px #FDF303;
+    border: solid 0.3px rgb(183, 181, 181);
+}
+
+
+.DG-boxShadow{
+    box-shadow: 0px 0px 12.29px 0px #FF3333;
+    border: solid 0.3px rgb(183, 181, 181);
+}
+
+.ESS-boxShadow{
+    box-shadow: 0px 0px 12.29px 0px #E6944F;
+    border: solid 0.3px rgb(183, 181, 181);
 }
 

@@ -89,6 +89,109 @@ let option = {
   ]
 };
 
+let option1 = {
+    color: ['#80FFA5', '#00DDFF', '#37A2FF', '#FF0087', '#FFBF00'],
+    tooltip: {
+      trigger: 'axis',
+      axisPointer: {
+        type: 'cross',
+        label: {
+          backgroundColor: '#6a7985'
+        }
+      }
+    },
+    legend: {
+      data: ['UPS', 'PDU', 'DG', 'ESS'],
+      bottom: 0,
+      textStyle: {
+        color: 'white'
+      }
+    },
+    grid: {
+      left: '3%',
+      right: '8%',
+      bottom: '15%', // Adjusted to make room for the legend
+      top: '5%',
+      containLabel: true,
+    },
+    xAxis: [
+      {
+        type: 'category',
+        boundaryGap: false,
+        data: ['Jan', '', 'Feb', '', 'Mar', '', 'Apr', '', 'May'],
+        axisLabel: {
+          fontSize: 8, // Smaller font size for x-axis labels
+          color: "white"
+        }
+      }
+    ],
+    yAxis: [
+      {
+        type: 'value',
+        axisLabel: {
+          fontSize: 8, // Smaller font size for y-axis labels
+          color: "white"
+        }
+      }
+    ],
+    series: [
+      {
+        name: 'UPS',
+        type: 'line',
+        smooth: true,
+        lineStyle: {
+          width: 1,
+        },
+        showSymbol: false,
+        emphasis: {
+          focus: 'series'
+        },
+        data: [0, 50, 100, 50, 80, 30, 90, 50, 40]
+      },
+      {
+        name: 'PDU',
+        type: 'line',
+        smooth: true,
+        lineStyle: {
+          width: 1
+        },
+        showSymbol: false,
+        emphasis: {
+          focus: 'series'
+        },
+        data: [80, 20, 30, 70, 20, 70, 30, 20, 30]
+      },
+      {
+        name: 'DG',
+        type: 'line',
+        smooth: true,
+        lineStyle: {
+          width: 1
+        },
+        showSymbol: false,
+        emphasis: {
+          focus: 'series'
+        },
+        data: [50, 90, 60, 10, 50, 10, 60, 90, 50]
+      },
+      {
+        name: 'ESS',
+        type: 'line',
+        smooth: true,
+        lineStyle: {
+          width: 1
+        },
+        showSymbol: false,
+        emphasis: {
+          focus: 'series'
+        },
+        data: [80, 40, 20, 60, 10, 60, 20, 40, 80]
+      }
+    ]
+  };
+  
+  
+
 let option4 = {
     polar: {
       radius: [50, '15%']
@@ -271,7 +374,7 @@ let option5 = {
   };
 
 
-let option2 = {
+  let option2 = {
     tooltip: {
       trigger: 'axis',
       axisPointer: {
@@ -299,6 +402,13 @@ let option2 = {
       axisLabel: {
         fontSize: 4, // Smaller font size for y-axis labels
         color: "white"
+      }
+    },
+    legend: {
+      data: ['UPS', 'PDU', 'DG', 'ESS'],
+      bottom: 0,
+      textStyle: {
+        color: 'white'
       }
     },
     series: [
@@ -340,7 +450,7 @@ let option2 = {
       }
     ]
   };
-
+  
 
   let option6 = {
     tooltip: {
@@ -498,6 +608,7 @@ function PowerPage(props) {
                 </div>
             </div>
             <PowerRepresentation
+                className="UPS-boxShadow"
                 icon={upsSvg}
                 availabilityValue="98"
                 loadValue="97"
@@ -507,6 +618,7 @@ function PowerPage(props) {
                 recommendations="93"
             />
             <PowerRepresentation
+                className="PDU-boxShadow"
                 icon={essSvg}
                 availabilityValue="98"
                 loadValue="97"
@@ -516,6 +628,7 @@ function PowerPage(props) {
                 recommendations="93"
             />
             <PowerRepresentation
+                className="DG-boxShadow"
                 icon={dgSvg}
                 availabilityValue="98"
                 loadValue="97"
@@ -526,6 +639,7 @@ function PowerPage(props) {
             />
 
             <PowerRepresentation
+                className="ESS-boxShadow"
                 icon={pduSvg}
                 availabilityValue="98"
                 loadValue="97"
@@ -584,7 +698,7 @@ function PowerPage(props) {
                                     <span>Battery Health</span>
                                 </div>
                                 <div className='body' style={{ height:"85%"}}>
-                                    <ReactECharts option={option} style={{ height: '100%', width: '100%'}} />
+                                    <ReactECharts option={option1} style={{ height: '100%', width: '100%'}} />
                                 </div>
                             </div>
 
