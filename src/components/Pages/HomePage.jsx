@@ -152,6 +152,141 @@ function HomePage(props) {
         ]
       };
 
+            
+    const mapOption = {
+      tooltip: {
+        trigger: 'item',
+        formatter: function(params) {
+          return `
+            <style>
+              .tt-data-text {
+                width: fit-content;
+                height: 14px;
+                font-family: 'roboto-medium';
+                font-size: 14.03px;
+                font-weight: 500;
+                line-height: 13.29px;
+                letter-spacing: -0.02em;
+                text-align: left;
+                color: #292929;
+                position: relative;
+                &::after {
+                  content: '';
+                  height: 5px;
+                  width: 5px;
+                  background: #00FF64;
+                  display: block;
+                  right: -10px;
+                  position: absolute;
+                  bottom: 5px;
+                }
+              }
+              .tt-data-value {
+                width: 28px;
+                height: 14px;
+                font-family: 'roboto-medium';
+                font-size: 14.03px;
+                font-weight: 800;
+                line-height: 13.29px;
+                letter-spacing: -0.02em;
+                text-align: left;
+                color: #3E8EEA;
+                margin-left: 15px;
+
+              }
+            </style>
+            <div style="background-color: #fff; width: 317px; height: 143.18px; padding:16px; border:none; border-radius:8px; background-color:#FDFEFE">
+              <p style="width: 285px; height: 28px; margin-bottom:10px;font-family: 'roboto-medium'; font-size: 18px; font-weight: 500; line-height: 28px; text-align: left; color: #343434;">Efficiency Index</p>
+              <div style="display:flex; padding:5px; height:23px; width:fit-content;">
+                <p class="tt-data-text">Power</p>
+                <p class="tt-data-value">2.11</p>
+              </div>
+              <div style="display:flex; padding:5px; height:23px; width:fit-content;">
+                <p class="tt-data-text">Cooling</p>
+                <p class="tt-data-value">0.78</p>
+              </div>
+              <div style="display:flex; padding:5px; height:23px; width:fit-content;">
+                <p class="tt-data-text">Sustainability</p>
+                <p class="tt-data-value">1.93</p>
+              </div>
+            </div>
+          `;
+        }
+      },
+      animationDurationUpdate: 1500,
+      animationEasingUpdate: 'quinticInOut',
+      series: [
+        {
+          type: 'graph',
+          layout: 'none',
+          symbolSize: 8,
+          roam: true,
+          label: {
+            show: false,
+            emphasis: {
+              show: false
+            },
+          },
+          color: 'red',
+          edgeSymbol: ['circle', 'arrow'],
+          edgeSymbolSize: [2, 5],
+          edgeLabel: {
+            fontSize: 6
+          },
+          data: [
+            { name: 'Node 1', x: 103.3, y: 232.1 },
+            { name: 'Node 2', x: 231.5, y: 129.4 },
+            { name: 'Node 5', x: 223.7, y: 190.8 },
+            { name: 'Node 6', x: 321.5, y: 53.4 },
+            { name: 'Node 7', x: 401.2, y: 202.6 },
+            { name: 'Node 3', x: 345.8, y: 273.2 },
+            { name: 'Node 4', x: 76.9, y: 74.6 },
+            { name: 'Node 8', x: 276.3, y: 154.8 },
+            { name: 'Node 9', x: 59.4, y: 86.3 },
+            { name: 'Node 10', x: 346.7, y: 204.2 },
+            { name: 'Node 11', x: 83.5, y: 194.7 },
+            { name: 'Node 12', x: 174.9, y: 273.4 },
+            { name: 'Node 13', x: 256.4, y: 92.5 },
+            { name: 'Node 14', x: 377.5, y: 144.3 },
+            { name: 'Node 15', x: 143.6, y: 283.1 },
+            { name: 'Node 16', x: 302.9, y: 67.2 },
+            { name: 'Node 17', x: 88.7, y: 179.5 },
+            { name: 'Node 18', x: 205.4, y: 263.8 },
+            { name: 'Node 19', x: 339.1, y: 183.6 },
+            { name: 'Node 20', x: 118.9, y: 145.3 }
+          ],
+          links: [
+            { source: 0, target: 1, lineStyle: { curveness: 0.1 }, tooltip: { show: false } },
+            { source: 1, target: 2, lineStyle: { curveness: 0.1 }, tooltip: { show: false } },
+            { source: 2, target: 3, lineStyle: { curveness: 0.1 }, tooltip: { show: false } },
+            { source: 3, target: 4, lineStyle: { curveness: 0.1 }, tooltip: { show: false } },
+            { source: 4, target: 5, lineStyle: { curveness: 0.1 }, tooltip: { show: false } },
+            { source: 5, target: 6, lineStyle: { curveness: 0.1 }, tooltip: { show: false } },
+            { source: 6, target: 7, lineStyle: { curveness: 0.1 }, tooltip: { show: false } },
+            { source: 7, target: 8, lineStyle: { curveness: 0.1 }, tooltip: { show: false } },
+            { source: 8, target: 10, lineStyle: { curveness: 0.2 }, tooltip: { show: false } },
+            { source: 9, target: 12, lineStyle: { curveness: 0.3 }, tooltip: { show: false } },
+            { source: 10, target: 11, lineStyle: { curveness: 0.1 }, tooltip: { show: false } },
+            { source: 11, target: 13, lineStyle: { curveness: 0.2 }, tooltip: { show: false } },
+            { source: 12, target: 13, lineStyle: { curveness: 0.1 }, tooltip: { show: false } },
+            { source: 13, target: 15, lineStyle: { curveness: 0.2 }, tooltip: { show: false } },
+            { source: 14, target: 15, lineStyle: { curveness: 0.1 }, tooltip: { show: false } },
+            { source: 15, target: 16, lineStyle: { curveness: 0.1 }, tooltip: { show: false } },
+            { source: 16, target: 18, lineStyle: { curveness: 0.2 }, tooltip: { show: false } },
+            { source: 17, target: 19, lineStyle: { curveness: 0.2 }, tooltip: { show: false } },
+            { source: 18, target: 19, lineStyle: { curveness: 0.3 }, tooltip: { show: false } },
+          ],
+          lineStyle: {
+            opacity: 0.9,
+            width: 1,
+            curveness: 0,
+            color: 'white'
+          }
+        },
+        
+      ]
+    };
+
     return (
         <div className='homePage'>
             <div className = "panelContainer">
@@ -160,6 +295,7 @@ function HomePage(props) {
                     <span className='dataCenterText'>
                         <img src={DataCenterIcon} />
                         Data Center Overview</span>
+                        <ReactECharts option={mapOption} style={{ height: '100%', width: '100%' }} />
                     </div>
                     <div className='askAelia'>
                         <span className='leftPanelCardHeader'>Ask Aelia</span>
@@ -206,7 +342,6 @@ function HomePage(props) {
                     </div>
                 </div>
                 <div className='centerpanel'>
-                   
                     <div style={{display:"flex", flexDirection:"column", position:"relative", gap:"200px"}}>
                         <div  style={{display:"flex", flexDirection:"row", position:"relative", gap: "40px", justifyContent:"center"}}>
                             <UptimeOverview style={{transform:"translateY(200px)"}}
