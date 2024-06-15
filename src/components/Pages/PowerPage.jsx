@@ -686,7 +686,7 @@ function PowerPage(props) {
                             <span>Real Time</span>
                         </div>
                         <div className='pagination' style={{justifyContent:"center", marginTop:"25px", marginBottom:"25px"}}>
-                            <PaginationControl size="small"></PaginationControl>
+                            <PaginationControl size="small" startCount="1" perPage="3" totalCount="10"/>
                         </div>
 
                         <div className='card-body'>
@@ -748,7 +748,7 @@ function PowerPage(props) {
                             <span>Analytics</span>
                         </div>
                         <div className='pagination' style={{justifyContent:"center", marginTop:"25px", marginBottom:"25px"}}>
-                            <PaginationControl size="small"></PaginationControl>
+                            <PaginationControl size="small" startCount="1" perPage="3" totalCount="10"/>
                         </div>
 
 
