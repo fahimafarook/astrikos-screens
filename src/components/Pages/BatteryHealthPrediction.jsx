@@ -119,7 +119,7 @@ function BatteryHealthPrediction() {
             </button>
           </div>
           <div className='psh-pagination-container'>
-            <PaginationControl size="large"/>
+            <PaginationControl size="large" startCount="1" perPage="3" totalCount="10"/>
           </div>
         </div>
         <div className='bh-grid-container'>
