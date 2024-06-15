@@ -29,100 +29,119 @@ import OverallSvg from '../../assets/svg/uptimeSVG/Overall.svg';
 
 function HomePage(props) {
 
-   const option = {
+  const option = {
     angleAxis: {
-        show: false,
-        startAngle: 240,
+      show: false,
+      startAngle: 240,
+    },
+    radiusAxis: {
+      type: 'category',
+      data: ['Mon'],
+      z: 10,
+      axisLine: {
+        show: true 
       },
-      radiusAxis: {
-        type: 'category',
-        data: ['Mon'],
-        z: 10,
-        axisLine: {
-          show: true 
+      axisTick: {
+        show: false
+      },
+      axisLabel: {
+        show: false 
+      },
+      splitLine: {
+        show: true 
+      }
+    },
+    polar: {
+      axisLine: {
+        show: false
+      },
+      axisLabel: {
+        show: false // Hides the polar axis labels
+      },
+      splitLine: {
+        show: false // Hides the polar split lines
+      },
+      splitArea: {
+        show: false // Hides the polar split area
+      }
+    },
+    series: [
+      {
+        type: 'bar',
+        data: [90],
+        coordinateSystem: 'polar',
+        name: 'Health',
+        stack: 'a',
+        color: '#FF3333',
+        barWidth: 9,
+        label: {
+          show: false // Ensures no label is shown for this series
         },
-        axisTick: {
-          show: false
-        },
-        axisLabel: {
-          show: false 
-        },
-        splitLine: {
-          show: true 
+        emphasis: {
+          focus: 'series'
         }
       },
-      polar: {
-        axisLine: {
-          show: false
+      {
+        type: 'bar',
+        data: [80],
+        coordinateSystem: 'polar',
+        name: 'Availability',
+        stack: 'b',
+        color: '#008C37',
+        barWidth: 11,
+        label: {
+          show: false // Ensures no label is shown for this series
         },
-        axisLabel: {
-          show: false // Hides the polar axis labels
-        },
-        splitLine: {
-          show: false // Hides the polar split lines
-        },
-        splitArea: {
-          show: false // Hides the polar split area
+        emphasis: {
+          focus: 'series'
         }
       },
-        series: [
-          {
-            type: 'bar',
-            data: [90],
-            coordinateSystem: 'polar',
-            name: 'Health',
-            stack: 'a',
-            color: '#FF3333',
-            barWidth: 9,
-            emphasis: {
-              focus: 'series'
-            }
-          },
-          {
-            type: 'bar',
-            data: [80],
-            coordinateSystem: 'polar',
-            name: 'Availability',
-            stack: 'b',
-            color: '#008C37',
-            barWidth: 11,
-            emphasis: {
-              focus: 'series'
-            }
-          },
-          {
-            type: 'bar',
-            data: [70],
-            coordinateSystem: 'polar',
-            name: 'Efficiency',
-            stack: 'c',
-            color: "#54FF97",
-            barWidth: 13,
-            emphasis: {
-              focus: 'series'
-            }
-          },
-          {
-            type: 'bar',
-            data: [70],
-            coordinateSystem: 'polar',
-            name: 'Load',
-            stack: 'd',
-            color: "#9EC03A",
-            textColor: "white",
-            barWidth: 15,
-            emphasis: {
-              focus: 'series'
-            }
-          }
-        ],
-        legend: {
-          show: true,
-          data: ['Health', 'Availability', 'Efficiency', 'Load'],
-          color: "white",
+      {
+        type: 'bar',
+        data: [70],
+        coordinateSystem: 'polar',
+        name: 'Efficiency',
+        stack: 'c',
+        color: "#54FF97",
+        barWidth: 13,
+        label: {
+          show: false // Ensures no label is shown for this series
+        },
+        emphasis: {
+          focus: 'series'
         }
-      };
-
+      },
+      {
+        type: 'bar',
+        data: [70],
+        coordinateSystem: 'polar',
+        name: 'Load',
+        stack: 'd',
+        color: "#9EC03A",
+        barWidth: 15,
+        label: {
+          show: false // Ensures no label is shown for this series
+        },
+        emphasis: {
+          focus: 'series'
+        }
+      }
+    ],
+    legend: {
+      show: true,
+      data: ['Health', 'Availability', 'Efficiency', 'Load'],
+      textStyle: {
+        color: 'white' // Ensures the legend text color is white
+      }
+    },
+    tooltip: {
+      show: false // Disable tooltip if it shows any labels or text
+    },
+    title: {
+      show: false // Ensure no title text is shown
+    }
+  };
+  
 
     const option2 = {
         tooltip: {

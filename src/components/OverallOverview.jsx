@@ -70,13 +70,13 @@ function OverallOverview(props) {
               rotate: 'tangential',
               formatter: function (value) {
                 if (value === 0.875) {
-                  return 'Grade A';
+                  return '';
                 } else if (value === 0.625) {
-                  return 'Grade B';
+                  return '';
                 } else if (value === 0.375) {
-                  return 'Grade C';
+                  return '';
                 } else if (value === 0.125) {
-                  return 'Grade D';
+                  return '';
                 }
                 return '';
               }
@@ -97,7 +97,6 @@ function OverallOverview(props) {
             data: [
               {
                 value: 0.7,
-                name: 'Grade Rating'
               }
             ]
           }

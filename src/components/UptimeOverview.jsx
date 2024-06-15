@@ -23,7 +23,7 @@ function UptimeOverview(props) {
                     <img src={props.uptimeIcon}></img>
                     <div className='UptimeTitle'>{props.uptimeTitle}</div>
                 </div>
-                <span className='uptime'>{props.uptime}</span>
+                <span className='uptime'>{props.uptime}%</span>
                 <div className='MTFB'>
                     <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M11.4116 5.98544V9.98544H10.4116V5.98544H11.4116ZM10.4116 10.9854V11.9854H11.4116V10.9854H10.4116ZM9.41162 9.63044C8.67662 10.4604 7.60662 10.9854 6.41162 10.9854C4.20662 10.9854 2.41162 9.19044 2.41162 6.98544C2.41162 4.78044 4.20662 2.98544 6.41162 2.98544V7.48544L10.1866 3.71044C9.27162 2.65544 7.92162 1.98544 6.41162 1.98544C3.65162 1.98544 1.41162 4.22544 1.41162 6.98544C1.41162 9.74544 3.65162 11.9854 6.41162 11.9854C7.53662 11.9854 8.57662 11.6154 9.41162 10.9854V9.63044Z" fill="#FF8E14"/>
