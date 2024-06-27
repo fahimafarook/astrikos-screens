@@ -160,7 +160,7 @@ function PowerRepresentation(props) {
                 <div className={`powerVisual upsStatus`}>
                     <div className={`svgHighlighter ${props.className}`}>
                         <img src={props.icon}></img>
-                        <span className='title'>UPS</span>
+                        <span className='title'>{props.title}</span>
                     </div>
                     <div className={`powerCardBody ${props.className}`}>
                         <div className='power-card-metric'>
@@ -196,11 +196,11 @@ function PowerRepresentation(props) {
                             <span className='title'>Alerts & Recommendations</span>
                             <div className='alerts'>
                                 <div className='indicator'></div>
-                                <span className='value'>2 Alters</span>
+                                <span className='value'>{props.alerts} Alerts</span>
                             </div>
                             <div className='recomendations'>
-                                <img src={IconSparkle}></img>
-                                <span>12 recomendations</span>
+                                <img src={IconSparkle} style={{paddingRight:"5px"}}></img>
+                                <span>{props.recommendations} recomendations</span>
                             </div>
                         </div>
                     </div>

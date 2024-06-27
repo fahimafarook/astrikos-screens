@@ -37,9 +37,12 @@ let option = {
     data: ['UPS', 'PDU', 'DG', 'ESS'], // Add legend item names here
     top: 'bottom',
     textStyle: {
-        fontSize: 8, // Set the font size of the legend text
-        color:"white",
-      }
+      fontSize: 8, // Set the font size of the legend text
+      color: "white",
+    },
+    icon: 'rect', // Set the icon shape to rectangle
+    itemWidth: 10, // Set the width of the legend item
+    itemHeight: 10 // Set the height of the legend item
   },
   series: [
     {
@@ -609,44 +612,49 @@ function PowerPage(props) {
             </div>
             <PowerRepresentation
                 className="UPS-boxShadow"
+                title="UPS"
                 icon={upsSvg}
                 availabilityValue="98"
                 loadValue="97"
                 health="96"
                 efficiency= "95"
-                alerts="94"
-                recommendations="93"
+                alerts="20"
+                recommendations="15"
             />
+
             <PowerRepresentation
                 className="PDU-boxShadow"
+                title="PDU"
                 icon={essSvg}
                 availabilityValue="98"
                 loadValue="97"
                 health="96"
                 efficiency= "95"
-                alerts="94"
-                recommendations="93"
+                alerts="12"
+                recommendations="15"
             />
             <PowerRepresentation
                 className="DG-boxShadow"
+                title="DG"
                 icon={dgSvg}
                 availabilityValue="98"
                 loadValue="97"
                 health="96"
                 efficiency= "95"
-                alerts="94"
-                recommendations="93"
+                alerts="23"
+                recommendations="19"
             />
 
             <PowerRepresentation
                 className="ESS-boxShadow"
+                title="ESS"
                 icon={pduSvg}
                 availabilityValue="98"
                 loadValue="97"
                 health="96"
                 efficiency= "95"
-                alerts="94"
-                recommendations="93"
+                alerts="22"
+                recommendations="56"
             />
             </div>
             <div className='powerRightPanel' style={{display:"flex", flexDirection:"column"}}>

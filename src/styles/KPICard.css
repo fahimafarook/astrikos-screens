@@ -2,8 +2,8 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    padding: 8.46709px 21.1677px 25.4013px;
+    align-items: centerl;
+    justify-content: center;
     gap: 7.13px;
     width: 1761px;
     height: 119px;
@@ -20,5 +20,5 @@
 .KPIText{
     color: white;
     font-family: 'roboto-black';
-    font-size: 27px;
+    font-size: 26px;
 }
