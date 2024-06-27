@@ -11,6 +11,7 @@ export const LoginPage = (props) => {
 
   const handleToggle = () => {
     setIsChecked(!isChecked);
+    console.log("checked");
   };
 
   const handleSubmit = async (event) => {
@@ -36,7 +37,7 @@ export const LoginPage = (props) => {
         <form onSubmit={handleSubmit} className="login-form">
           <span className="login-label">Login</span>
           <div>
-            <label htmlFor="username">Username:</label>
+            <label htmlFor="username">Username</label>
             <input
               type="text"
               id="username"
@@ -48,7 +49,7 @@ export const LoginPage = (props) => {
             />
           </div>
           <div>
-            <label htmlFor="domain">Domain:</label>
+            <label htmlFor="domain">Domain</label>
             <input
               type="text"
               id="domain"
@@ -60,7 +61,7 @@ export const LoginPage = (props) => {
             />
           </div>
           <div>
-            <label htmlFor="password">Password:</label>
+            <label htmlFor="password">Password</label>
             <input
               type="password"
               id="password"
@@ -82,7 +83,7 @@ export const LoginPage = (props) => {
            
           <div style={{display:"flex", flexDirection:"row", justifyContent:"center", alignItems:"baseline"}}>
             <span className="facing-issue" style={{textAlign:"center"}}>Facing issues with login?</span>
-            <span className="contact-support">Contact Support</span>
+            <a href="" className="contact-support">Contact Support</a>
           </div>
           
           <button className="submit-button" type="submit" onClick={() => props.navigatePage("Home")}>Sign in

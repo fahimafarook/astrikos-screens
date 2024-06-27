@@ -17,7 +17,6 @@
     border: solid 0.5px white;
 }
 
-
 .login-page{
     background-image: url("https://s3-alpha-sig.figma.com/img/4b6e/b4a7/e6b36ff26569c8b1e3dc80ff246b5211?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mQ4Fy5WW5OwE9qyfjmq-BseujSLvz1r82ygPYYrNjjpFDCTxgg0bQiTE2jvklAo8rpBuUGrS-P0Jj3s0rtaHdc4y1DGUbc7ydpu5yhoYrPb4dSqz5TCHce~~9foteBtZror~h5PIcQEpkbIXbOxSUS5dtimSjlyyaV9cNrWxJuS~o-IMbnuEj74xmEVtC9YrKYUyzr5xHzlFWxHx1FGA0mtsvqyf2RLLtZz6dKeiw0kdDCY-Nr-0R00R5jFZRjxSW2o~fxineq1xZlYYrR1O~zVATqWd0dXmSAijnUKLQhaCKyopB25U2-PwlldHWs8GAqWxaIpcohwoi1tR3ahBlQ__");
     background-repeat: none;
@@ -113,6 +112,10 @@
     margin-left: 5px;
 }
 
+.contact-support:hover{
+  cursor: pointer;
+}
+
 .submit-button{
     /* Button */
 
@@ -160,7 +163,7 @@ margin-top: 10px;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #3E8EEA;
+    background-color: rgb(166, 164, 164);
     transition: 0.4s;
     border-radius: 30px;
     box-shadow: 0 0 15px rgba(0, 123, 255, 0.5); /* Blue color blur */
