@@ -72,6 +72,10 @@
   animation-duration: 300ms;
 }
 
+.btn-disable {
+  cursor: none;
+}
+
 .btn-locate {
   /* left: 309px; */
   background: #C3DCF8;
