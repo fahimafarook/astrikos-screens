@@ -172,6 +172,10 @@ border: solid 0.5px white;
   border: solid 1px white;
 }
 
+.uptime-overview-container {
+  cursor: pointer;
+}
+
 .securityUptime{
   justify-content: center;
   align-items: center;
