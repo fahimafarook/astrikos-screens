@@ -365,7 +365,7 @@ function HomePage(props) {
                         <div  style={{display:"flex", flexDirection:"row", position:"relative", gap: "40px", justifyContent:"center"}}>
                             <UptimeOverview style={{transform:"translateY(200px)"}}
                                 uptimeIcon={SecurityIcon}
-                                uptimeTitle="security"
+                                uptimeTitle="Security"
                                 uptime="99.98"
                                 MTBValue="500"
                                 MTTRValue="2"
@@ -391,7 +391,7 @@ function HomePage(props) {
                                 MTTRValue="2"
                                 recomendations="12"
                                 uptimeSVG={CoolingSvg}
-                                onClick={() => props.navigatePage("Battery")}
+                                onClick={() => props.navigatePage("Home")}
                             />
                             <UptimeOverview style={{transform:"translateY(60px)"}}
                                 uptimeIcon={RackIcon}
@@ -401,7 +401,7 @@ function HomePage(props) {
                                 MTTRValue="2"
                                 recomendations="12"
                                 uptimeSVG={RackSvg}
-                                onClick={() => props.navigatePage("Ups")}
+                                onClick={() => props.navigatePage("Home")}
                             />
                             <UptimeOverview style={{transform:"translateY(200px)"}}
                                 uptimeIcon={NetworkIcon}
@@ -486,5 +486,3 @@ function HomePage(props) {
 }
 
 export default HomePage;
-
-
