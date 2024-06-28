@@ -17,7 +17,7 @@ function UptimeOverview(props) {
     };
 
     return (
-        <div onClick={() => props.onClick()}>
+        <div className='uptime-overview-container' onClick={() => props.onClick()}>
             <div className='securityUptime' style={props.style}>
                 <div style={{display:"flex", flexDirection:"row", justifyContent:"center", gap:"5px"}}>
                     <img src={props.uptimeIcon}></img>
