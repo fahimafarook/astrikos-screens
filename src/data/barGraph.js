@@ -1,13 +1,21 @@
 export const barGraph = {
     xAxis: {
       type: 'category',
-      data: ['Jan', 'Feb', 'Mar', 'Apr']
+      data: ['Jan', 'Feb', 'Mar', 'Apr'],
+      axisLabel: {
+        color: '#d9d9d9'
+      }
     },
-    yAxis: {},
+    yAxis: {
+      axisLabel: {
+        color: '#d9d9d9'
+      }
+    },
     legend: {
       orient: 'vertical',
       right: 4,
       data: ['Jan', 'Feb', 'Mar', 'Apr'],
+     
     },
     grid: {
       left: '3%',
@@ -17,6 +25,19 @@ export const barGraph = {
       containLabel: true
     },
     animationDurationUpdate: 500,
+    tooltip: {
+      trigger: 'axis',
+      axisPointer: {
+        type: 'shadow' // Show a shadow as the axis pointer
+      },
+      formatter: function (params) {
+        let result = '';
+        params.forEach(function (item) {
+          result += item.marker + ' ' + item.seriesName + ' in ' + item.name + ': ' + item.value + '<br/>';
+        });
+        return result;
+      }
+    },
     series: [
       {
         name: 'Sales',

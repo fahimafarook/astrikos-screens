@@ -19,7 +19,7 @@ function ChartContainerCard(props) {
         </div>
         <div className='chart-card-options'>
           <img src={InfoIcon}  className='card-icons'/>
-          <img src={MoreOptionsIcon} />
+          <img src={MoreOptionsIcon} className='more-option-icons'/>
         </div>
       </div>
       <div className='chart-container'>
@@ -29,12 +29,12 @@ function ChartContainerCard(props) {
         <div className='chart-summary-data'>
           <img src={TickIcon} />
           <span className='chart-summary-field'>Meeting MTBF</span>
-          <span className='chart-summary-value'>38 devices</span>
+          <span className='chart-summary-value'>{props.meetingMTBF} devices</span>
         </div>
         <div className='chart-summary-data'>
           <img src={ErrorIcon} />
           <span className='chart-summary-field'>Not Meeting MTBF</span>
-          <span className='chart-summary-value'>0 devices</span>
+          <span className='chart-summary-value'>{props.notMeetingMTBF} devices</span>
         </div>
       </div>
       <AdvisoryButton className='chart-recommendation' text={"12 Recommendations"} />

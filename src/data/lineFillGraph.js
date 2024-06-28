@@ -5,7 +5,7 @@ export const lineFillGraph = {
   legend: {
     data: ['Current Trends', 'Trends if ignored', 'S!aP advisory actions'],
     textStyle: {
-      color: '#d9d9d9'
+      color: 'white'
     },
     icon: 'rect', // Set the legend icon to rectangle
     itemWidth: 15, // Set the width of the legend icon
@@ -22,13 +22,13 @@ export const lineFillGraph = {
     boundaryGap: false,
     data: ['15/5', '16/5', '17/5', '18/5', '19/5', '20/5', '21/5'],
     axisLabel: {
-      color: 'grey'
+      color: '#d9d9d9'
     }
   },
   yAxis: {
     type: 'value',
     axisLabel: {
-      color: 'grey'
+      color: '#d9d9d9'
     }
   },
   series: [

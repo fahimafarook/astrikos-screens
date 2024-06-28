@@ -107,3 +107,7 @@
 .card-icons:hover{
   cursor: pointer;
 }
+
+.more-option-icons{
+  cursor: pointer;
+}

@@ -17,8 +17,8 @@ function AdvisoryCard(props) {
           <div className='ac-title-text'>Advisory</div>
         </div>
         <div className='ac-title-options'>
-          <img src={IconInfo}></img>
-          <img src={IconMoreOption}></img>
+          <img src={IconInfo} className='info-icon'></img>
+          <img src={IconMoreOption} className='more-option-icon'></img>
         </div>
       </div>
       <div className='advisory-card-content'>

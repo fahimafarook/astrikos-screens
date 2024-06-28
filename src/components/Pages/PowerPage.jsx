@@ -29,8 +29,8 @@ let option = {
   grid: {
     left: '3%',
     right: '10%',
-    bottom: '30%', // Adjusted to make room for the legend
-    top: '5%',
+    bottom: '20%', // Adjusted to make room for the legend
+    top: '0%',
     containLabel: true
   },
   legend: {
@@ -108,13 +108,16 @@ let option1 = {
       bottom: 0,
       textStyle: {
         color: 'white'
-      }
+      },
+      icon: 'rect', // Set the legend icon to rectangle
+      itemWidth: 15, // Width of the legend icon
+      itemHeight: 10 // Height of the legend icon
     },
     grid: {
       left: '3%',
       right: '8%',
-      bottom: '15%', // Adjusted to make room for the legend
-      top: '5%',
+      bottom: '30%', // Adjusted to make room for the legend
+      top: '10%',
       containLabel: true,
     },
     xAxis: [
@@ -715,7 +718,7 @@ function PowerPage(props) {
                                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M11.8987 11.7031H2.0859V1.89039H6.99228V0.488564H2.0859C1.30789 0.488564 0.684082 1.11938 0.684082 1.89039V11.7031C0.684082 12.4741 1.30789 13.105 2.0859 13.105H11.8987C12.6697 13.105 13.3005 12.4741 13.3005 11.7031V6.79676H11.8987V11.7031ZM8.3941 0.488564V1.89039H10.9104L4.02042 8.78034L5.0087 9.76862L11.8987 2.87867V5.39494H13.3005V0.488564H8.3941Z" fill="#7EB3F1"/>
                                     </svg>
-                                    <span>Battery Health</span>
+                                    <span>Load</span>
                                 </div>
                                 <div className='body'>
                                     <div className='body' style={{ height:"133px", width:"auto"}}>
@@ -729,7 +732,7 @@ function PowerPage(props) {
                                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M11.8987 11.7031H2.0859V1.89039H6.99228V0.488564H2.0859C1.30789 0.488564 0.684082 1.11938 0.684082 1.89039V11.7031C0.684082 12.4741 1.30789 13.105 2.0859 13.105H11.8987C12.6697 13.105 13.3005 12.4741 13.3005 11.7031V6.79676H11.8987V11.7031ZM8.3941 0.488564V1.89039H10.9104L4.02042 8.78034L5.0087 9.76862L11.8987 2.87867V5.39494H13.3005V0.488564H8.3941Z" fill="#7EB3F1"/>
                                     </svg>
-                                    <span>Battery Health</span>
+                                    <span>Efficiency</span>
                                 </div>
                                 <div className='body'>
                                     <div className='body' style={{ height:"133px", width:"auto"}}>
@@ -782,7 +785,7 @@ function PowerPage(props) {
                                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M11.8987 11.7031H2.0859V1.89039H6.99228V0.488564H2.0859C1.30789 0.488564 0.684082 1.11938 0.684082 1.89039V11.7031C0.684082 12.4741 1.30789 13.105 2.0859 13.105H11.8987C12.6697 13.105 13.3005 12.4741 13.3005 11.7031V6.79676H11.8987V11.7031ZM8.3941 0.488564V1.89039H10.9104L4.02042 8.78034L5.0087 9.76862L11.8987 2.87867V5.39494H13.3005V0.488564H8.3941Z" fill="#7EB3F1"/>
                                     </svg>
-                                    <span>Battery Health</span>
+                                    <span>Load</span>
                                 </div>
                                 <div className='body'>
                                     <div className='body' style={{height:"100px", width:"auto"}}>
@@ -800,7 +803,7 @@ function PowerPage(props) {
                                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M11.8987 11.7031H2.0859V1.89039H6.99228V0.488564H2.0859C1.30789 0.488564 0.684082 1.11938 0.684082 1.89039V11.7031C0.684082 12.4741 1.30789 13.105 2.0859 13.105H11.8987C12.6697 13.105 13.3005 12.4741 13.3005 11.7031V6.79676H11.8987V11.7031ZM8.3941 0.488564V1.89039H10.9104L4.02042 8.78034L5.0087 9.76862L11.8987 2.87867V5.39494H13.3005V0.488564H8.3941Z" fill="#7EB3F1"/>
                                     </svg>
-                                    <span>Battery Health</span>
+                                    <span>Efficiency</span>
                                 </div>
                                 <div className='body'>
                                     <div className='body' style={{ height:"100px", width:"auto"}}>

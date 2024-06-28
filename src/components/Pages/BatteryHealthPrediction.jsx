@@ -119,7 +119,7 @@ function BatteryHealthPrediction() {
             </button>
           </div>
           <div className='psh-pagination-container'>
-            <PaginationControl size="large" startCount="1" perPage="3" totalCount="10"/>
+            <PaginationControl size="large" startCount="1" perPage="3" totalCount="9"/>
           </div>
         </div>
         <div className='bh-grid-container'>
@@ -131,7 +131,7 @@ function BatteryHealthPrediction() {
             />
             <ChartContainerCard 
               icon={SohIcon}
-              title="State of Charge (SoC)"
+              title="State of Health (SoH)"
               chartOptions={barGraph}
             />
           </div>
@@ -151,12 +151,15 @@ function BatteryHealthPrediction() {
                                 <div className='aelia-chat aelia-chat-small'>Give an overview of my power systems</div>
                             </div>
                         <div style={{display:"flex", flexDirection:"row"}}>
-                            <div className="ask-anything-button">Ask anything to Aelia...
-                                <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11.3199 13.7399C9.84253 13.7399 8.64993 12.5473 8.64993 11.0699V5.72994C8.64993 4.25254 9.84253 3.05994 11.3199 3.05994C12.7973 3.05994 13.9899 4.25254 13.9899 5.72994V11.0699C13.9899 12.5473 12.7973 13.7399 11.3199 13.7399Z" fill="#343434"/>
-                                    <path d="M6.86993 11.0699C6.86993 13.5263 8.86353 15.5199 11.3199 15.5199C13.7763 15.5199 15.7699 13.5263 15.7699 11.0699H17.5499C17.5499 14.2116 15.227 16.7926 12.2099 17.2287V19.9699H10.4299V17.2287C7.41283 16.7926 5.08993 14.2116 5.08993 11.0699H6.86993Z" fill="#343434"/>
-                                </svg>
+                            
+                            <div className='ask-anything-container'>
+                              <input type="text" className="ask-anything-input" placeholder="Ask anything to Aelia..." ></input>
+                              <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M11.3199 13.7399C9.84253 13.7399 8.64993 12.5473 8.64993 11.0699V5.72994C8.64993 4.25254 9.84253 3.05994 11.3199 3.05994C12.7973 3.05994 13.9899 4.25254 13.9899 5.72994V11.0699C13.9899 12.5473 12.7973 13.7399 11.3199 13.7399Z" fill="#343434"/>
+                                  <path d="M6.86993 11.0699C6.86993 13.5263 8.86353 15.5199 11.3199 15.5199C13.7763 15.5199 15.7699 13.5263 15.7699 11.0699H17.5499C17.5499 14.2116 15.227 16.7926 12.2099 17.2287V19.9699H10.4299V17.2287C7.41283 16.7926 5.08993 14.2116 5.08993 11.0699H6.86993Z" fill="#343434"/>
+                              </svg>
                             </div>
+
                             <svg width="35" height="53" viewBox="0 0 35 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M28.6449 28.1744H29.6708C32.6152 28.1744 35 30.5592 35 33.5036V36.1682C34.9981 37.9272 34.4162 39.6364 33.3443 41.0311C32.2724 42.4257 30.7705 43.4279 29.0712 43.8823L28.6449 28.1744ZM6.28875 43.8823C4.5895 43.4279 3.08755 42.4257 2.01568 41.0311C0.943802 39.6364 0.361843 37.9272 0.359985 36.1682V33.5036C0.359985 30.5592 2.74482 28.1744 5.68922 28.1744H6.71509L6.28875 43.8823ZM11.0184 20.1805H24.3415V28.1744H11.0184V20.1805Z" fill="#97A7AF"/>
                                 <path d="M29.6707 36.1682V40.1651C29.6707 43.3453 28.4074 46.3952 26.1587 48.6439C23.91 50.8926 20.8601 52.1559 17.68 52.1559C14.4998 52.1559 11.4499 50.8926 9.20122 48.6439C6.95252 46.3952 5.68921 43.3453 5.68921 40.1651V36.1682L7.02152 34.8359H28.3384L29.6707 36.1682Z" fill="#BCC7CE"/>
@@ -179,7 +182,6 @@ function BatteryHealthPrediction() {
                                 </defs>
                                 </svg>
                             </div>
-                        
                         </div>
       </div>
     </div>

@@ -155,3 +155,46 @@
   text-align: left;
   color: #E8E7EB;
 }
+
+.info-icon{
+  cursor: pointer;
+}
+
+.more-option-icon{
+  cursor: pointer;
+}
+
+.ask-anything-container{
+  position: relative;
+  margin-top: 5px;
+  font-size: 11px;
+  background: white;
+  height: 33px;
+  width: 208px;
+  border-radius: 16px;
+  text-align: start;
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.ask-anything-input{
+  border: none;
+  border-radius: 16px;
+  height: 33px;
+  width: 2oxpx;
+  outline: none; /* Ensures no outline when focused */
+}
+
+.ask-anything-input:hover {
+  border: none; /* No border on hover */
+  box-shadow: none; /* Ensures no shadow effect on hover */
+}
+
+.ask-anything-input:focus {
+  border: none; /* No border on focus */
+  box-shadow: none; /* Ensures no shadow effect on focus */
+}
+
