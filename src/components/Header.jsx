@@ -27,13 +27,13 @@ function Header(props) {
                 <img style={{position: "absolute", left:0, top:0}} src={HeaderLogoBorder}></img>
             </div>
             <div className="header-left-buttons">
-                <button className="header-tile-button btn-prev">
+                <button className={`header-tile-button btn-prev ${props.showPrev === false ? 'btn-disable' : ''}`} onClick={() => props.navigatePrevPage()}>
                     <img src={BtnPrev} />
                 </button>
-                <button className="header-tile-button btn-home">
+                <button className="header-tile-button btn-home" onClick={() => props.navigatePage("Home")}>
                     <img src={BtnHome} />
                 </button>
-                <button className="header-tile-button btn-next">
+                <button className={`header-tile-button btn-next ${props.showNext === false ? 'btn-disable' : ''}`} onClick={() => props.navigateNextPage()}>
                     <img src={BtnNext} />
                 </button>
                 <button className="header-tile-button btn-locate">
@@ -83,4 +83,3 @@ function Header(props) {
 }
 
 export default Header;
-
