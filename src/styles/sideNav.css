@@ -28,6 +28,11 @@
     flex-grow: 0;
     background: linear-gradient(81.58deg, #A6CA3B 0%, #4E93E4 100%);
     padding: 1.5px;
+    border:none
+}
+
+.navigationIcons:hover{
+    cursor: pointer;
 }
 
 .svgBg{

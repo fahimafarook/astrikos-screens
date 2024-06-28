@@ -2,7 +2,7 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    align-items: centerl;
+    align-items: center;
     justify-content: center;
     gap: 7.13px;
     width: 1761px;
@@ -21,4 +21,8 @@
     color: white;
     font-family: 'roboto-black';
     font-size: 26px;
+}
+
+.KPIText:hover{
+    cursor: pointer;
 }

@@ -16,7 +16,8 @@
   letter-spacing: -0.02em;
   text-align: left;
   color: #ECECEC;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
+  margin-top: 4px;
 }
 .psh-title::after {
   content: "Live";

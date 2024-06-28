@@ -3,8 +3,13 @@ export const lineFillGraph = {
     trigger: 'axis'
   },
   legend: {
-    color: '#FFFFFF',
-    data: ['Current Trends', 'Trends if ignored', 'S!aP advisory actions']
+    data: ['Current Trends', 'Trends if ignored', 'S!aP advisory actions'],
+    textStyle: {
+      color: '#d9d9d9'
+    },
+    icon: 'rect', // Set the legend icon to rectangle
+    itemWidth: 15, // Set the width of the legend icon
+    itemHeight: 10, // Set the height of the legend icon
   },
   grid: {
     left: '3%',
@@ -15,10 +20,16 @@ export const lineFillGraph = {
   xAxis: {
     type: 'category',
     boundaryGap: false,
-    data: ['15/5', '16/5', '17/5', '18/5', '19/5', '20/5', '21/5']
+    data: ['15/5', '16/5', '17/5', '18/5', '19/5', '20/5', '21/5'],
+    axisLabel: {
+      color: 'grey'
+    }
   },
   yAxis: {
-    type: 'value'
+    type: 'value',
+    axisLabel: {
+      color: 'grey'
+    }
   },
   series: [
     {

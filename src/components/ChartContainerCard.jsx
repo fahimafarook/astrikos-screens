@@ -18,7 +18,7 @@ function ChartContainerCard(props) {
           {props.title}
         </div>
         <div className='chart-card-options'>
-          <img src={InfoIcon} />
+          <img src={InfoIcon}  className='card-icons'/>
           <img src={MoreOptionsIcon} />
         </div>
       </div>
