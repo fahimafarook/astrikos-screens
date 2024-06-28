@@ -17,8 +17,8 @@
 .App{
   background-color: rgb(20,70,128);
   background: linear-gradient(107.08deg, #19406F 1.56%, #0765D0 50.04%, #213971 98.86%);
-  height: 1080px;
-  width: 1920px;
+  height: 2160px;
+  width: 3840px;
   overflow: hidden;
 }
 
