@@ -11,7 +11,7 @@ import ReactECharts from 'echarts-for-react';
 
 function ChartContainerCard(props) {
   return (
-    <div className='chart-card-container'>
+    <div className='chart-card-container' onClick={() => props.navigatePageTitle && props.navigatePage(props.navigatePageTitle)}>
       <div className='chart-card-header'>
         <div className='chart-card-title'>
           <img src={props.icon} />

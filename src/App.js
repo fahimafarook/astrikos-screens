@@ -14,6 +14,8 @@ import IconBattery from "../src/assets/svg/HeaderTitleIconBattery.svg"
 import IconUPS from "../src/assets/svg/HeaderTitle/UPSSystem.svg"
 import IconPower from "../src/assets/svg/HeaderTitle/Power.svg"
 
+import waterMark from "../src/assets/svg/watermark.svg"
+
 const headerConfig = {
   LoginPage:{title: "Login", icon: IconTrendingUp},
   Home: {title: "Uptime and Reliability", icon: IconTrendingUp},
@@ -26,23 +28,67 @@ function App() {
   const [currentPage, setCurrentPage] = useState("Login");
   const [header, setHeader] = useState(headerConfig[currentPage]);
   const pageHistory = useRef(['Login']);
+  const currPageIndex = useRef(0)
+  const [currentPageIndex, setCurrentPageIndex] = useState(0);
 
   useEffect(() => {
     setHeader(headerConfig[currentPage]);
   }, [currentPage]);
 
   const navigatePage = (pageName) => {
-    console.log("**** In navigatePage ****" + pageName)
-    setCurrentPage(pageName);
+    if(pageHistory.current.at(-1) !== pageName) {
+      console.log("**** In navigatePage ****" + pageName)
+      setCurrentPage(pageName);
+      // pageHistory.current = pageHistory.current.slice(0, currentPageIndex + 1);
+      pageHistory.current = pageHistory.current.slice(0, currPageIndex.current + 1);
+      pageHistory.current.push(pageName);
+      // setCurrentPageIndex(pageHistory.current.length - 1);
+      currPageIndex.current = (pageHistory.current.length - 1);
+    }
   }
 
+  const navigatePrevPage = () => {
+    // if(currentPageIndex > 0) {
+      if(currPageIndex.current > 0) {
+      // setCurrentPageIndex(curr => {
+      //   return curr - 1;
+      // });
+      currPageIndex.current = currPageIndex.current - 1;
+      // setCurrentPage(pageHistory.current.at(currentPageIndex));
+      setCurrentPage(pageHistory.current.at(currPageIndex.current));
+    }
+  }
+
+  const navigateNextPage = () => {
+    // if(currentPageIndex < (pageHistory.current.length - 1)) {
+      if(currPageIndex.current < (pageHistory.current.length - 1)) {
+      // setCurrentPageIndex(curr => {
+      // setCurrentPageIndex(curr => {
+      //   return curr + 1;
+      // });
+      currPageIndex.current = currPageIndex.current + 1;
+      // setCurrentPage(pageHistory.current.at(currentPageIndex));
+      setCurrentPage(pageHistory.current.at(currPageIndex.current));
+    }
+  }
 
   return (
     <div className="App">
       {currentPage == 'Login' ?
           <LoginPage navigatePage={navigatePage}></LoginPage>:
           <div>
-            <Header title={header?.title} titleIcon={header?.icon} navigatePage={navigatePage}></Header>
+            <Header 
+              title={header?.title} 
+              titleIcon={header?.icon} 
+              navigatePage={navigatePage} 
+              navigatePrevPage={navigatePrevPage} 
+              navigateNextPage={navigateNextPage}
+              // showPrev={currentPageIndex > 0}
+              showPrev={currPageIndex.current > 0}
+              // showNext={(pageHistory.current.length - 1) > currentPageIndex}
+              showNext={(pageHistory.current.length - 1) > currPageIndex.current}
+              >
+            </Header>
               <div style={{display:"flex"}}>
                 <SideNav/>
                 <div className="app-container">
@@ -51,16 +97,15 @@ function App() {
                     {
                       'Home':  <HomePage navigatePage={navigatePage}></HomePage>,
                       'Battery':  <BatteryHealthPrediction navigatePage={navigatePage}></BatteryHealthPrediction>,
-                    'Ups':  <UPSSystem navigatePage={navigatePage}></UPSSystem>,
-                    'Power': <PowerPage />
-                  }[currentPage]
-                  
+                      'Ups':  <UPSSystem navigatePage={navigatePage}></UPSSystem>,
+                      'Power': <PowerPage navigatePage={navigatePage}/>
+                    }[currentPage]
                 }
               </div>
               </div>
           </div>
       }
-     
+      <img className='watermark' src={waterMark} />
     </div>
   );
 }

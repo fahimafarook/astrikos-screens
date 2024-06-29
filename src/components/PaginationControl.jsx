@@ -34,7 +34,7 @@ function PaginationControl(props) {
 
   return (
     <div className={`pagination-container-${props.size}`}>
-      <div className={`pagination-text-${props.size}`} style={{minWidth: 'fit-content'}}>{startCount} - {endCount} of {totalCount} items</div>
+      <div className={`pagination-text-${props.size}`}>{startCount} - {endCount} of {totalCount} items</div>
       <button className={`pagination-button-${props.size}`} onClick={()=>prevPage()}>Previous</button>
       <button className={`pagination-button-${props.size}`} onClick={()=>nextPage()}>Next</button>
     </div>

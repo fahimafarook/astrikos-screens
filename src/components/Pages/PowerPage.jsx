@@ -623,6 +623,8 @@ function PowerPage(props) {
                 efficiency= "95"
                 alerts="20"
                 recommendations="15"
+                navigatePage={props.navigatePage}
+                navigatePageTitle="Ups"
             />
 
             <PowerRepresentation

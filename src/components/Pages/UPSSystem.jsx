@@ -22,7 +22,7 @@ import {barGraph} from "../../data/barGraph.js"
 import {circularIndicator} from "../../data/circularIndicator.js"
 
 
-function UPSSystem() {
+function UPSSystem(props) {
 
   const [chartPage, setChartPage] = useState(1);
 
@@ -49,7 +49,7 @@ function UPSSystem() {
             </button>
           </div>
           <div className='psh-pagination-container'>
-            <PaginationControl size="large" startCount="1" perPage="6" totalCount="9" onPageChange={handlePagination}/>
+            <PaginationControl size="large" startCount="1" perPage="6" totalCount="12" onPageChange={handlePagination}/>
           </div>
         </div>
         <div className='ups-grid-container'>
@@ -86,6 +86,8 @@ function UPSSystem() {
                 chartOptions={{}}
                 meetingMTBF="9"
                 notMeetingMTBF="6"
+                navigatePage={props.navigatePage}
+                navigatePageTitle={'Battery'}
               />
               <ChartContainerCard 
                 icon={EmissionControl}
@@ -110,7 +112,7 @@ function UPSSystem() {
               <ChartContainerCard 
                 icon={BatteryHealth}
                 title="Battery Health Prediction"
-                chartOptions={circularIndicator}
+                chartOptions={barGraph}
               />
               <ChartContainerCard 
                 icon={EmissionControl}
@@ -121,6 +123,30 @@ function UPSSystem() {
                 icon={FailureMode}
                 title="Failure Mode and Effects Analysis (FMEA)"
                 chartOptions={lineFillGraph}
+              />
+            </div>
+            <div className='ups-grid-charts'>
+              <ChartContainerCard 
+                icon={PredictiveMaintenance}
+                title="Predictive Maintenance"
+                chartOptions={lineFillGraph}
+                meetingMTBF="38"
+                notMeetingMTBF="12"
+
+              />
+              <ChartContainerCard 
+                icon={FuelEfficiency}
+                title="Fuel Efficiency Optimization"
+                chartOptions={barGraph}
+                meetingMTBF="18"
+                notMeetingMTBF="31"
+              />
+              <ChartContainerCard 
+                icon={LoadForecasting}
+                title="Load Forecasting and Management"
+                chartOptions={lineGraph}
+                meetingMTBF="1"
+                notMeetingMTBF="39"
               />
             </div>
             </>

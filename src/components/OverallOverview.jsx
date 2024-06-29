@@ -122,11 +122,11 @@ function OverallOverview(props) {
                     <span className='OA-text'>MTTR</span>
                     <span className='OA-value'>{props.MTTRValue} hours</span>
                 </div>
-                <div className='recomendations'>
+                <div className='OA-recomendations'>
                     <img src={IconSparkle}></img>
                     <span>{props.recomendations} Recommendations</span>
                     <Lottie options={defaultOptions} height={40} width={30} style={{transform:"translateY(20px)"}}/>
-                    <img src={props.uptimeSVG}></img>
+                    <img className='uptime-vector' src={props.uptimeSVG}></img>
                     <img src={GlowEffect} style={{transform:"translate(-30px, -300px)",}}/>
                 </div>
             </div>

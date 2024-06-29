@@ -15,7 +15,7 @@ function UptimeOverview(props) {
             preserveAspectRatio: 'xMidYMid slice'
         }
     };
-
+    
     return (
         <div className='uptime-overview-container' onClick={() => props.onClick()}>
             <div className='securityUptime' style={props.style}>
@@ -44,7 +44,7 @@ function UptimeOverview(props) {
                 </div>
                 <div style={{padding:"0", transform:"translateY(-10px)"}}>
                     <Lottie options={defaultOptions} height={50} width={30} style={{transform:"translateY(20px)"}}/>
-                    <img src={props.uptimeSVG}></img>
+                    <img className='uptime-vector' src={props.uptimeSVG}></img>
                     <img className="glow-ray" src={GlowEffect} style={{transform:"translate(-30px, -200px) scale(0.8)",}}/>
                 </div>
             </div>
