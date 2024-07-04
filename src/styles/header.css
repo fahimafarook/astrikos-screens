@@ -21,7 +21,6 @@
   top: 0px;
   left: 0;
   gap: 0px;
-  opacity: 0px;
   margin: 15px;
   position: absolute;
 }
@@ -40,7 +39,6 @@
   padding: 0 9px 5.63px 9px;
   margin-left: 5px;
   border-radius: 3.38px;
-  opacity: 0px;
   position: relative;
   border: none;
 }
@@ -93,7 +91,6 @@
   width: 606.5px;
   height: 84px;
   gap: 0px;
-  opacity: 0px;
   animation-timing-function: ease-out;
   animation-duration: 300ms;
   position: absolute;
@@ -132,7 +129,6 @@
   height: 50.66px;
   padding: 4.67px 4.22px .67px 4.22px;
   gap: 0px;
-  opacity: 0px;
 }
 
 .title-text {

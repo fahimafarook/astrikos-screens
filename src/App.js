@@ -36,9 +36,10 @@ function App() {
   }, [currentPage]);
 
   const navigatePage = (pageName) => {
+    console.log("pageName");
+    setCurrentPage(pageName);
     if(pageHistory.current.at(-1) !== pageName) {
       console.log("**** In navigatePage ****" + pageName)
-      setCurrentPage(pageName);
       // pageHistory.current = pageHistory.current.slice(0, currentPageIndex + 1);
       pageHistory.current = pageHistory.current.slice(0, currPageIndex.current + 1);
       pageHistory.current.push(pageName);
