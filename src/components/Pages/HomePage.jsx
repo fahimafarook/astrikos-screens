@@ -26,6 +26,7 @@ import PowerSvg from '../../assets/svg/uptimeSVG/Power.svg';
 import RackSvg from '../../assets/svg/uptimeSVG/Rack.svg';
 import ServerSvg from '../../assets/svg/uptimeSVG/server.svg';
 import OverallSvg from '../../assets/svg/uptimeSVG/Overall.svg';
+import MapCard from '../../leaflet/MapCard.jsx';
 
 function HomePage(props) {
 
@@ -314,7 +315,9 @@ function HomePage(props) {
                     <span className='dataCenterText'>
                         <img src={DataCenterIcon} />
                         Data Center Overview</span>
-                        <ReactECharts option={mapOption} style={{ height: '100%', width: '100%' }} />
+                        {/* <ReactECharts option={mapOption} style={{ height: '100%', width: '100%' }} /> */}
+                        <MapCard></MapCard>
+                        
                     </div>
                     <div className='askAelia'>
                         <span className='leftPanelCardHeader'>Ask Aelia</span>

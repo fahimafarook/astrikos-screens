@@ -22,7 +22,6 @@
   gap: 8.42px;
   width: 337px;
   height: 248px;
-  filter: drop-shadow(0px 0px 12.2909px #3881D5);
   backdrop-filter: blur(5.8446px);
   border-radius: 15px;
   flex: none;
@@ -45,6 +44,7 @@
   border-radius: 12.7006px;
   flex: none;
   order: 1;
+  filter: drop-shadow(0px 0px 12.2909px #3881D5);
 }
 
 .aelia-chat{
@@ -131,7 +131,7 @@ gap: 8.42px;
 width: 337px;
 height: 248px;
 
-filter: drop-shadow(0px 0px 12.2909px #3881D5);
+/* filter: drop-shadow(0px 0px 12.2909px #3881D5); */
 backdrop-filter: blur(5.8446px);
 /* Note: backdrop-filter has minimal browser support */
 border-radius: 15px;
@@ -229,6 +229,8 @@ border: solid 0.5px white;
 .recomendations{
   font-size: 14px;
   margin-bottom: 0;
+  z-index: 3;
+  position: relative;
 }
 
 .MTFB > .value{
@@ -273,6 +275,7 @@ border: solid 0.5px white;
 
 .uptime-vector {
     animation: bounce 1.5s ease-in-out infinite;
+    z-index: -1;
 }
 
 @keyframes bounce { 
@@ -333,6 +336,8 @@ border: solid 0.5px white;
 
 .glow-ray {
   animation: glowUp 1.5s forwards;
+  z-index: -2;
+  position: relative;
 }
 
 @keyframes glowUp {
@@ -406,7 +411,7 @@ border: solid 0.5px white;
   gap: 8.42px;
   width: 337px;
   height: 285px;
-  filter: drop-shadow(0px 0px 12.2909px #3881D5);
+  /* filter: drop-shadow(0px 0px 12.2909px #3881D5); */
   backdrop-filter: blur(5.8446px);
   border-radius: 15px;
   flex: none;

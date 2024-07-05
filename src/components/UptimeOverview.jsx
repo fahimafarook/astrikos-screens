@@ -42,8 +42,7 @@ function UptimeOverview(props) {
                     <img src={IconSparkle}></img>
                     <span>{props.recomendations} Recommendations</span>
                 </div>
-                <div style={{padding:"0", transform:"translateY(-10px)"}}>
-                    <Lottie options={defaultOptions} height={50} width={30} style={{transform:"translateY(20px)"}}/>
+                <div style={{padding:"0", transform:"translateY(35px)", zIndex:"-2"}}>
                     <img className='uptime-vector' src={props.uptimeSVG}></img>
                     <img className="glow-ray" src={GlowEffect} style={{transform:"translate(-30px, -200px) scale(0.8)",}}/>
                 </div>

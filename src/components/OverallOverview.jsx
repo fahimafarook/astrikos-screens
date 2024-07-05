@@ -124,10 +124,12 @@ function OverallOverview(props) {
                 </div>
                 <div className='OA-recomendations'>
                     <img src={IconSparkle}></img>
-                    <span>{props.recomendations} Recommendations</span>
-                    <Lottie options={defaultOptions} height={40} width={30} style={{transform:"translateY(20px)"}}/>
-                    <img className='uptime-vector' src={props.uptimeSVG}></img>
-                    <img src={GlowEffect} style={{transform:"translate(-30px, -300px)",}}/>
+                    <span style={{position:"relative", zIndex:"3"}}>{props.recomendations} Recommendations</span>
+                    <div style={{padding:"0", transform:"translateY(35px)", zIndex:"-2"}}>
+                      <img className='uptime-vector' src={props.uptimeSVG}></img>
+                      <img className= "glow-ray" src={GlowEffect} style={{transform:"translate(-30px, -300px)"}}/>
+                    </div>
+                   
                 </div>
             </div>
         </div>
