@@ -200,7 +200,7 @@ function PowerRepresentation(props) {
                             </div>
                             <div className='power-recomendations'>
                                 <img src={IconSparkle} style={{paddingRight:"5px"}}></img>
-                                <span>{props.recommendations} recomendations</span>
+                                <span>{props.recommendations} recommendations</span>
                             </div>
                         </div>
                     </div>
