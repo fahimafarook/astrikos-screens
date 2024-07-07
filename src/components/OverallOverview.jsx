@@ -64,19 +64,19 @@ function OverallOverview(props) {
               }
             },
             axisLabel: {
-              color: '#464646',
+              color: '#ffffff',
               fontSize: 10,
-              distance: -60,
+              distance: -40,
               rotate: 'tangential',
               formatter: function (value) {
                 if (value === 0.875) {
-                  return '';
+                  return 'T1';
                 } else if (value === 0.625) {
-                  return '';
+                  return 'T2';
                 } else if (value === 0.375) {
-                  return '';
+                  return 'T3';
                 } else if (value === 0.125) {
-                  return '';
+                  return 'T4';
                 }
                 return '';
               }
@@ -85,29 +85,15 @@ function OverallOverview(props) {
               offsetCenter: [0, '-10%'],
               fontSize: 7,
             },
-            detail: {
-              fontSize: 15,
-              offsetCenter: [0, '-35%'],
-              valueAnimation: true,
-              formatter: function (value) {
-                return Math.round(value * 100) + '';
-              },
-              color: 'inherit'
-            },
-            data: [
-              {
-                value: 0.7,
-              }
-            ]
           }
         ]
       };
 
     return (
         <div>
-            <div className='securityUptime' style={props.style}>
+            <div className='OA-securityUptime' style={props.style}>
             <ReactECharts option={option3} style={{ height: '100%', width: '100%', transform:"translateY(30px)" }} />
-                <span className='OA-uptime'>{props.uptime}</span>
+                <span className='OA-uptime'>{props.uptime}%</span>
                 <div className='OA-MTFB'>
                     <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M11.4116 5.98544V9.98544H10.4116V5.98544H11.4116ZM10.4116 10.9854V11.9854H11.4116V10.9854H10.4116ZM9.41162 9.63044C8.67662 10.4604 7.60662 10.9854 6.41162 10.9854C4.20662 10.9854 2.41162 9.19044 2.41162 6.98544C2.41162 4.78044 4.20662 2.98544 6.41162 2.98544V7.48544L10.1866 3.71044C9.27162 2.65544 7.92162 1.98544 6.41162 1.98544C3.65162 1.98544 1.41162 4.22544 1.41162 6.98544C1.41162 9.74544 3.65162 11.9854 6.41162 11.9854C7.53662 11.9854 8.57662 11.6154 9.41162 10.9854V9.63044Z" fill="#FF8E14"/>
@@ -121,9 +107,9 @@ function OverallOverview(props) {
                     </svg>
                     <span className='OA-text'>MTTR</span>
                     <span className='OA-value'>{props.MTTRValue} hours</span>
-                </div>
+                </div> 
                 <div className='OA-recomendations'>
-                    <img src={IconSparkle}></img>
+                    <img src={IconSparkle} style={{paddingRight:"5px"}}></img>
                     <span style={{position:"relative", zIndex:"3"}}>{props.recomendations} Recommendations</span>
                     <div style={{padding:"0", transform:"translateY(35px)", zIndex:"-2"}}>
                       <img className='uptime-vector' src={props.uptimeSVG}></img>

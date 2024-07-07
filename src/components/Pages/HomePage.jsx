@@ -53,6 +53,8 @@ function HomePage(props) {
       }
     },
     polar: {
+      center: ['50%', '60%'], // Adjust the vertical position
+      radius: '70%',
       axisLine: {
         show: false
       },
@@ -133,7 +135,8 @@ function HomePage(props) {
       data: ['Health', 'Availability', 'Efficiency', 'Load'],
       textStyle: {
         color: 'white' // Ensures the legend text color is white
-      }
+      },
+      top: '0%', // Adjust the value to increase space between legend and chart
     },
     tooltip: {
       show: false // Disable tooltip if it shows any labels or text
@@ -370,7 +373,7 @@ function HomePage(props) {
                             <UptimeOverview style={{transform:"translateY(200px)"}}
                                 uptimeIcon={SecurityIcon}
                                 uptimeTitle="Security"
-                                uptime="99.98"
+                                uptime="99.999"
                                 MTBValue="500"
                                 MTTRValue="2"
                                 recomendations="12"
@@ -380,7 +383,7 @@ function HomePage(props) {
                             <UptimeOverview style={{transform:"translateY(60px)"}}
                                 uptimeIcon={PowerIcon}
                                 uptimeTitle="Power"
-                                uptime="99.98"
+                                uptime="99.999"
                                 MTBValue="500"
                                 MTTRValue="2"
                                 recomendations="12"
@@ -390,7 +393,7 @@ function HomePage(props) {
                                 <UptimeOverview style={{transform:"translateY(20px)"}}
                                 uptimeIcon={CoolingIcon}
                                 uptimeTitle="Cooling"
-                                uptime="99.98"
+                                uptime="97.966"
                                 MTBValue="500"
                                 MTTRValue="2"
                                 recomendations="12"
@@ -400,7 +403,7 @@ function HomePage(props) {
                             <UptimeOverview style={{transform:"translateY(60px)"}}
                                 uptimeIcon={RackIcon}
                                 uptimeTitle="Rack"
-                                uptime="99.98"
+                                uptime="99.999"
                                 MTBValue="500"
                                 MTTRValue="2"
                                 recomendations="12"
@@ -410,7 +413,7 @@ function HomePage(props) {
                             <UptimeOverview style={{transform:"translateY(200px)"}}
                                 uptimeIcon={NetworkIcon}
                                 uptimeTitle="Network"
-                                uptime="99.98"
+                                uptime="99.999"
                                 MTBValue="500"
                                 MTTRValue="2"
                                 recomendations="12"
@@ -422,7 +425,7 @@ function HomePage(props) {
                             <UptimeOverview style={{transform:"translate(-30px, 90px)"}}
                                 uptimeIcon={peopleIcon}
                                 uptimeTitle="People"
-                                uptime="99.98"
+                                uptime="99.999"
                                 MTBValue="500"
                                 MTTRValue="2"
                                 recomendations="12"
@@ -430,7 +433,7 @@ function HomePage(props) {
                                 onClick={() => props.navigatePage("Home")}
                             />
                                 <OverallOverview style={{transform:"translateY(-100px)"}}
-                                uptime="91.98"
+                                uptime="99.999"
                                 MTBValue="500"
                                 MTTRValue="2"
                                 recomendations="12"
@@ -440,7 +443,7 @@ function HomePage(props) {
                                 <UptimeOverview style={{transform:"translate(30px, 90px)"}}
                                 uptimeIcon={ServerIcon}
                                 uptimeTitle="Servers"
-                                uptime="99.98"
+                                uptime="99.999"
                                 MTBValue="500"
                                 MTTRValue="2"
                                 recomendations="12"

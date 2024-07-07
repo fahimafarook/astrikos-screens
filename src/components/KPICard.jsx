@@ -39,7 +39,7 @@ function KPICard(props) {
                 </svg>
 
 
-                <img width="150px" src={AiSVG}></img>
+                <img height="115px" width="160px" style={{opacity:"0.8"}} src={AiSVG}></img>
 
                 <svg width="117" height="8" viewBox="0 0 117 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2.37085 4.17705L113.867 3.99844" stroke="#00D3FF" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"/>

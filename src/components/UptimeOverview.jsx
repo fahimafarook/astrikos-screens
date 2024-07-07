@@ -39,7 +39,7 @@ function UptimeOverview(props) {
                     <span className='value'>{props.MTTRValue} hours</span>
                 </div>
                 <div className='recomendations'>
-                    <img src={IconSparkle}></img>
+                    <img src={IconSparkle} style={{paddingRight:"5px"}}></img>
                     <span>{props.recomendations} Recommendations</span>
                 </div>
                 <div style={{padding:"0", transform:"translateY(35px)", zIndex:"-2"}}>

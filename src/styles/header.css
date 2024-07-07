@@ -70,10 +70,6 @@
   animation-duration: 300ms;
 }
 
-.btn-disable {
-  cursor: none;
-}
-
 .btn-locate {
   /* left: 309px; */
   background: #C3DCF8;
@@ -169,14 +165,14 @@
 .btn-profile {
   width: 130.82px;
   height: 29.91px;
-  padding: 5.45px 10.91px 5.45px 10.91px;
+  /* padding: 5.45px 10.91px 5.45px 10.91px; */
   border-radius: 5.45px;
 
   background: #C3DCF8;
   border: 0.91px solid #C5C5C5;
 
   /* font-family: Roboto; */
-  font-size: 11px;
+  font-size: 12.73px;
   font-weight: 600;
   line-height: 18.18px;
   letter-spacing: 0.9090909361839294px;
@@ -185,6 +181,8 @@
   align-content: center;
   align-self: center;
   display: flex;
+  align-items: center;
+  justify-content: center;
 
   position: absolute;
   right: 31.33px;

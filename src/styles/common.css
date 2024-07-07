@@ -146,3 +146,11 @@
   letter-spacing: 1px;
   text-align: left;
 }
+
+.btn-disable {
+  cursor: not-allowed;
+  pointer-events: all !important;
+  background: #adadad;
+  color: #3f3f3f;
+  border: none;
+}

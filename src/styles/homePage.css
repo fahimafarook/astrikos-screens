@@ -294,7 +294,17 @@ border: solid 0.5px white;
 
 
 
-
+.OA-securityUptime{
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+  position: relative;
+  width: 200px;
+  height: 163.03px;
+  font-family: 'roboto-regular';
+  color: white;
+}
 
 .OA-MTFB{
   display: flex;
@@ -318,15 +328,15 @@ border: solid 0.5px white;
 }
 
 .OA-recomendations{
-  font-size: 11.37px;
+  font-size: 16.67px;
 }
 
-.MTFB > .value{
+.OA-MTFB > .OA-value{
   color: #EED52F;
 }
 
 
-.MTTR > .value{
+.OA-MTTR > .OA-value{
   color: #EED52F;
 }
 

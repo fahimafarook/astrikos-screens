@@ -156,9 +156,9 @@ function PowerRepresentation(props) {
     //     </div>
 
     return (
-        <div className="powerRepresentations" onClick={() => props.navigatePageTitle && props.navigatePage(props.navigatePageTitle)}>
+        <div className="powerRepresentations">
                 <div className={`powerVisual upsStatus`}>
-                    <div className={`svgHighlighter ${props.className}`}>
+                    <div className={`svgHighlighter ${props.className}`} onClick={() => props.navigatePageTitle && props.navigatePage(props.navigatePageTitle)}>
                         <img src={props.icon}></img>
                         <span className='title'>{props.title}</span>
                     </div>

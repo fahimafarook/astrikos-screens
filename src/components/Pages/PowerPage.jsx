@@ -549,7 +549,7 @@ function PowerPage(props) {
                         <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M29.4189 11.4765L33.5118 15.5693L24.7898 24.2913L17.6407 17.1421L4.39697 30.4038L6.91704 32.9238L17.6407 22.2001L24.7898 29.3493L36.0497 18.1073L40.1426 22.2001V11.4765H29.4189Z" fill="#00E85B"/>
                         </svg>
-                        <span className='power-KPI-span2'>99.99%</span>
+                        <span className='power-KPI-span2'>99.999%</span>
                     </div>
                 </div>
                 <div className='power-KPI-main'>
@@ -778,7 +778,7 @@ function PowerPage(props) {
                                 </div>
                                 <div>
                                     <img src={sparle}></img>
-                                    <span className='recomendation-text'>3 Recomendations</span>
+                                    <span className='recomendation-text'>3 Recommendations</span>
                                 </div>
                             </div>
 
@@ -796,7 +796,7 @@ function PowerPage(props) {
                                 </div>
                                 <div>
                                     <img src={sparle}></img>
-                                    <span className='recomendation-text'>4 Recomendations</span>
+                                    <span className='recomendation-text'>4 Recommendations</span>
                                 </div>
                             </div>
 
@@ -814,7 +814,7 @@ function PowerPage(props) {
                                 </div>
                                 <div>
                                     <img src={sparle}></img>
-                                    <span className='recomendation-text'>4 Recomendations</span>
+                                    <span className='recomendation-text'>4 Recommendations</span>
                                 </div>
                             </div>
                         </div>

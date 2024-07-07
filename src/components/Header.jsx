@@ -27,13 +27,13 @@ function Header(props) {
                 <img style={{position: "absolute", left:0, top:0}} src={HeaderLogoBorder}></img>
             </div>
             <div className="header-left-buttons">
-                <button className={`header-tile-button btn-prev ${props.showPrev === false ? 'btn-disable' : ''}`} onClick={() => props.navigatePrevPage()}>
+                <button className={`header-tile-button btn-prev`} onClick={() => props.navigatePrevPage()}>
                     <img src={BtnPrev} />
                 </button>
                 <button className="header-tile-button btn-home" onClick={() => props.navigatePage("Home")}>
                     <img src={BtnHome} />
                 </button>
-                <button className={`header-tile-button btn-next ${props.showNext === false ? 'btn-disable' : ''}`} onClick={() => props.navigateNextPage()}>
+                <button className={`header-tile-button btn-next`} onClick={() => props.navigateNextPage()}>
                     <img src={BtnNext} />
                 </button>
                 <button className="header-tile-button btn-locate">
@@ -75,8 +75,8 @@ function Header(props) {
                 </button>
             </div>
             <button className='btn-profile'>
-                <div style={{padding:"0"}}>IBMSSuprvr 1</div>
-                <img src={BtnProfile} />
+                <div style={{padding:"0",paddingRight:"3px"}}>IBMSSuprvr 1</div>
+                <img src={BtnProfile} style={{height:"13.55px", width:"14.55px"}} />
             </button>
         </div>
     );

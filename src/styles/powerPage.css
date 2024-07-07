@@ -143,7 +143,7 @@
 width: 138.86px;
 height: 42.34px;
 
-font-family: 'roboto-Black';
+font-family: 'roboto-medium';
 font-style: normal;
 font-weight: 500;
 font-size: 37.162px;
@@ -207,6 +207,7 @@ flex-grow: 0;
     flex: none;
     order: 0;
     flex-grow: 0;
+    cursor: pointer;
 }
 
 .svgHighlighter > span{
